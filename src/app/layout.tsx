@@ -1,6 +1,8 @@
+"use client"
 import './globals.css'
 import { Inter } from 'next/font/google'
 import NavBar from '../components/navbar/index';
+import {usePathname} from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,10 +16,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+  const light = ['/contact', '/', '/keep-talking']
+  const isLight = light.filter(path => path === pathname);
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
+        <NavBar isDark={!isLight}/>
         {children}
       </body>
     </html>
