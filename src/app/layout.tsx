@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   const pathname = usePathname()
   const light = ['/contact', '/', '/keep-talking']
-  const isLight = light.filter(path => path === pathname);
+  const isLight = light.filter(path => path === pathname).length > 0;
   return (
     <html lang="en">
       <body className={inter.className}>

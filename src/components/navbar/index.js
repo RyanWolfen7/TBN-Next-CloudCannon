@@ -3,10 +3,9 @@ import Image from "next/image";
 const NavBar = ({
     isDark
 }) => {
-
     return (
         <div className="sticky top-0 z-50">
-            <div className="flex justify-center">
+            <div className="flex justify-center bg-slate-600">
                 <div className="flex items-center justify-between py-4 px-6 w-10/12">
                     <div className="flex items-center m-4">
                         <a href="/" className={`mr-4 text-${isDark ? "black" : "white"}`}>
@@ -15,12 +14,12 @@ const NavBar = ({
                                 alt="Home"
                                 width={100}
                                 height={20}
-                                className={`mr-4 ${isDark ? "" : "h-10 filter invert"}`}
+                                className={`mr-4 h-10 ${isDark ? "" : "filter invert"}`}
                             />
                         </a>
                     </div>
                     <div className="flex items-center">
-                        <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" className={`text-${isDark ? "black" : "white"} mx-4 hover:text-gray-200`}>
+                        <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" class={`text-${isDark ? "black" : "white"} mx-4 hover:text-gray-200`}>
                             SHOP
                         </a>
                         <a href="/watch" className={`text-${isDark ? "black" : "white"} mx-4 hover:text-gray-200`}>
@@ -31,7 +30,7 @@ const NavBar = ({
                         </a>
                         <button className={`text-${isDark ? "black" : "white"} ml-4 p-1 hover:text-gray-200`}>
                             <div className="space-y-2">
-                                <span className={`block w-5 h-0.5 bg-${isDark ? "black" : "white"}`}></span>
+                                <span className={`block w-5 h-0.5 bg-${isDark ? "black" : "white"} `}></span>
                                 <span className={`block w-5 h-0.5 bg-${isDark ? "black" : "white"}`}></span>
                                 <span className={`block w-5 h-0.5 bg-${isDark ? "black" : "white"}`}></span>
                             </div>
