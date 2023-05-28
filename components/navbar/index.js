@@ -27,7 +27,7 @@ const NavBar = ({
     return (
         <div className="sticky top-0 z-50">
             <div className="flex justify-center bg-slate-600">
-                <div className="flex items-center justify-between py-4 px-6 w-10/12">
+                <div className="flex items-center justify-between py-2 px-6 w-10/12">
                     <div className="flex items-center m-4">
                         <a href="/" className={`mr-4 ${color.text}`}>
                             <Image
@@ -39,7 +39,7 @@ const NavBar = ({
                             />
                         </a>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-12">
                         <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" class={`${color.text} mx-4 hover:text-gray-200`}>
                             SHOP
                         </a>
