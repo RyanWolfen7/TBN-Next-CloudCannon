@@ -1,0 +1,66 @@
+'use client'
+import Image from "next/image";
+import {usePathname} from 'next/navigation'
+import { useEffect, useState } from 'react';
+
+const NavBar = ({
+
+}) => {
+    const pathname = usePathname()
+    const light = ['/contact', '/', '/keep-talking']
+    const [color, setColor] = useState({
+        text: 'text-black',
+        image: '',
+        bg: 'bg-black'
+    })
+
+    useEffect(() => {
+        if(light.filter(path => path === pathname).length > 0) {
+            setColor({
+                text: 'text-white',
+                image: 'filter invert',
+                bg: "bg-white"
+            })
+        }
+    },[])
+
+    return (
+        <div className="sticky top-0 z-50">
+            <div className="flex justify-center bg-slate-600">
+                <div className="flex items-center justify-between py-4 px-6 w-10/12">
+                    <div className="flex items-center m-4">
+                        <a href="/" className={`mr-4 ${color.text}`}>
+                            <Image
+                                src="https://www.bettertogether.tv/sites/default/files/better-together-final_BW.png"
+                                alt="Home"
+                                width={100}
+                                height={20}
+                                className={`mr-4 h-10 ${color.image}`}
+                            />
+                        </a>
+                    </div>
+                    <div className="flex items-center">
+                        <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" class={`${color.text} mx-4 hover:text-gray-200`}>
+                            SHOP
+                        </a>
+                        <a href="/watch" className={`${color.text} !important mx-4 hover:text-gray-200`}>
+                            WATCH
+                        </a>
+                        <a href="https://www.tbn.org/bettertogether?_gl=1*k0j2vp*_ga*NDc5NjE4NjYxLjE2ODUxMzA1MTk.*_ga_93P5W4NV2P*MTY4NTEzNzg1MC4yLjEuMTY4NTEzNzg1Ni4wLjAuMA.." className={`${color.text} !important mx-4 hover:text-gray-200`}>
+                            GIVE
+                        </a>
+                        <button className={`${color.text} ml-4 p-1 hover:text-gray-200`}>
+                            <div className="space-y-2">
+                                <span className={`block w-5 h-0.5 ${color.bg} !important`}></span>
+                                <span className={`block w-5 h-0.5 ${color.bg}  !important`}></span>
+                                <span className={`block w-5 h-0.5 ${color.bg}  !important`}></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default NavBar;
