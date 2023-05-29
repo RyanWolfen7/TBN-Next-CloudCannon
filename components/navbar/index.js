@@ -39,7 +39,7 @@ const NavBar = ({
                             />
                         </a>
                     </div>
-                    <div className="flex items-center gap-12">
+                    <div className="editable flex items-center gap-12">
                         <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" class={`${color.text} mx-4 hover:text-gray-200`}>
                             SHOP
                         </a>

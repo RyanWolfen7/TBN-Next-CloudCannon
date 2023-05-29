@@ -15,5 +15,9 @@ module.exports = {
     },
     data_config: {
 
+    },
+    source_editor: {
+        tab_size: 2,
+        theme: "dawn"
     }
 }
