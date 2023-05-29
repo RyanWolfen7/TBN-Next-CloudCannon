@@ -1,3 +1,18 @@
 {
-    
+    "mainNav": {
+        "links": [
+            {
+                "name": "shop",
+                "url": "https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header"
+            },
+            {
+                "name": "watch",
+                "url": "/watch"
+            },
+            {
+                "name": "give",
+                "url": "https://www.tbn.org/bettertogether?_gl=1*k0j2vp*_ga*NDc5NjE4NjYxLjE2ODUxMzA1MTk.*_ga_93P5W4NV2P*MTY4NTEzNzg1MC4yLjEuMTY4NTEzNzg1Ni4wLjAuMA.."
+            }
+        ] 
+    }
 }

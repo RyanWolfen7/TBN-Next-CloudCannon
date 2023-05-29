@@ -2,6 +2,7 @@
 import Image from "next/image";
 import {usePathname} from 'next/navigation'
 import { useEffect, useState } from 'react';
+import { navigation } from '../../lib/data'
 
 const NavBar = ({
 
@@ -40,15 +41,11 @@ const NavBar = ({
                         </a>
                     </div>
                     <div className="editable flex items-center gap-12">
-                        <a href="https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0001&utm_source=Btsite-Header&utm_medium=web&utm_content=header" class={`${color.text} mx-4 hover:text-gray-200`}>
-                            SHOP
-                        </a>
-                        <a href="/watch" className={`${color.text} !important mx-4 hover:text-gray-200`}>
-                            WATCH
-                        </a>
-                        <a href="https://www.tbn.org/bettertogether?_gl=1*k0j2vp*_ga*NDc5NjE4NjYxLjE2ODUxMzA1MTk.*_ga_93P5W4NV2P*MTY4NTEzNzg1MC4yLjEuMTY4NTEzNzg1Ni4wLjAuMA.." className={`${color.text} !important mx-4 hover:text-gray-200`}>
-                            GIVE
-                        </a>
+                        {navigation.mainNav.links.map((link, index) => (
+                            <a href={link.url} key={`${link.name}-${index}`} className={`editable ${color.text} !important mx-4 hover:text-gray-200`}>
+                                {link.name.toUpperCase()}
+                            </a>
+                        ))}
                         <button className={`${color.text} ml-4 p-1 hover:text-gray-200`}>
                             <div className="space-y-2">
                                 <span className={`block w-5 h-0.5 ${color.bg} !important`}></span>
