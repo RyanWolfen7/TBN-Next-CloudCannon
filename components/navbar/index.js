@@ -7,7 +7,6 @@ const NavBar = ({
 
 }) => {
     const pathname = usePathname()
-    const light = ['/contact', '/', '/keep-talking']
     const [color, setColor] = useState({
         text: 'text-black',
         image: '',
@@ -15,6 +14,7 @@ const NavBar = ({
     })
 
     useEffect(() => {
+        const light = ['/contact', '/', '/keep-talking']
         if(light.filter(path => path === pathname).length > 0) {
             setColor({
                 text: 'text-white',
@@ -22,7 +22,7 @@ const NavBar = ({
                 bg: "bg-white"
             })
         }
-    },[])
+    },[pathname])
 
     return (
         <div className="sticky top-0 z-50">
