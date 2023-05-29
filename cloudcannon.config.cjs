@@ -20,8 +20,6 @@ module.exports = {
     collections_config: {
         data: {
             path: 'data',
-            disable_add: true,
-            disable_add_folder: true
         },
         webpages: {
             path: 'content/pages',
@@ -36,7 +34,7 @@ module.exports = {
             url: '/',
             output: true,
             name: 'Home',
-            _enabled_editors: ['source', 'visual', 'content']
+            _enabled_editors: ['source', 'visual', 'content', 'data']
         },
         collection_groups: [
             {
