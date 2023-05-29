@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@cloudcannon/react-connector": "^2.0.0",
+    "@cloudcannon/reader": "^1.1.3",
     "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
