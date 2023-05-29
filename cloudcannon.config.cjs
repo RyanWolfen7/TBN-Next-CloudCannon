@@ -1,4 +1,13 @@
 module.exports = {
+    generator: {
+        metadata: {
+            markdown: "markdown-it",
+            "markdown-it": {
+                html: true,
+                linkify: true
+            }
+        }
+    },
     paths: {
         collections: 'content',
         data: 'data',
@@ -6,13 +15,14 @@ module.exports = {
         uploads: 'public/uploads'
     },
     collections_config: {
-        data: { 
+        data: {
             path: 'data',
             output: true
         },
-        mainNav: {
-            name: 'Main Navbar',
-            path: './content/mainNav',
+        landing: {
+            name: 'Home',
+            path: './content/landing',
+            url: '/',
             output: true
         }
     },
