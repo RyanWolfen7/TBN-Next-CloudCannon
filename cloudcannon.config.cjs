@@ -19,10 +19,8 @@ module.exports = {
             path: 'data',
             output: true
         },
-        landing: {
-            name: 'Home',
-            path: './content/landing',
-            url: '/',
+        pages: {
+            path: './content/pages',
             output: true
         }
     },
