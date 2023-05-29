@@ -20,6 +20,8 @@ module.exports = {
     collections_config: {
         data: {
             path: 'data',
+            disable_add: true,
+            disable_add_folder: true
         },
         webpages: {
             path: 'content/pages',
