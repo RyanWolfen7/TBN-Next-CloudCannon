@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {usePathname} from 'next/navigation'
 import { useEffect, useState } from 'react';
-import { navigation } from '../../lib/data'
+import { navigation, company } from '../../lib/data'
 
 const NavBar = ({
 
@@ -27,12 +27,12 @@ const NavBar = ({
 
     return (
         <div className="sticky top-0 z-50">
-            <div className="flex justify-center bg-slate-600">
+            <div className="flex justify-center">
                 <div className="flex items-center justify-between py-2 px-6 w-10/12">
                     <div className="flex items-center m-4">
-                        <a href="/" className={`mr-4 ${color.text}`}>
+                        <a href="/" className={`editable mr-4 ${color.text}`}>
                             <Image
-                                src="https://www.bettertogether.tv/sites/default/files/better-together-final_BW.png"
+                                src={company.logo_url}
                                 alt="Home"
                                 width={100}
                                 height={20}
