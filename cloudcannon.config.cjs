@@ -24,23 +24,38 @@ module.exports = {
         },
         webpages: {
             path: './content/pages',
+            parser: 'frontmatter',
             output: true,
             url: '/[slug]',
             name: 'Pages',
             icon: 'wysiwyg',
+            create:  "[relative_base_path]/{title|slugify}.md",
+            schemas: {
+                default: {
+                    path: 'schemas/pages/default.md'
+                },
+                landing: {
+                    name: 'Landing Page',
+                    path: 'schemas/pages/landing.md'
+                }
+            },
             _enabled_editors: ['visual', 'content'],
-            create: {
-                path: "[relative_base_path]/{title|slugify}.md"
-            }
         },
     },
     collection_groups: [
+        {
+            heading: "Data",
+            collections: [
+                data
+            ]
+        },
         {
             heading: 'Pages',
             collections: [
                 'webpages'
             ]
         },
+        
     ],
     data_config: {
 
