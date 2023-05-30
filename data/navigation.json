@@ -12,6 +12,10 @@
             {
                 "name": "give",
                 "url": "https://www.tbn.org/bettertogether?_gl=1*k0j2vp*_ga*NDc5NjE4NjYxLjE2ODUxMzA1MTk.*_ga_93P5W4NV2P*MTY4NTEzNzg1MC4yLjEuMTY4NTEzNzg1Ni4wLjAuMA.."
+            },
+            {
+                "name": "blog",
+                "url": "/blog"
             }
         ]
     }
