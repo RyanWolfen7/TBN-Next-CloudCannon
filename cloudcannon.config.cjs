@@ -55,9 +55,6 @@ module.exports = {
                 }
             ]
         },
-        guests: {
-
-        }
     },
     collection_groups: [
         {
