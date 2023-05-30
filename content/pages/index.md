@@ -1,7 +1,7 @@
 ---
-title:
-slug:
-url:
+title: Landing Page
+slug: /
+url: /
 author:
 image:
 ---
