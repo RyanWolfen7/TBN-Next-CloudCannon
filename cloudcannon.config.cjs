@@ -46,7 +46,6 @@ module.exports = {
             add_options: [
                 {
                     name: "Add Page",
-                    editor: "visual",
                     schema: {
                         path: 'schemas/pages/default.md'
                     }
