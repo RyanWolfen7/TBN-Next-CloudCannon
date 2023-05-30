@@ -1,7 +1,7 @@
 ---
 _schema: default
 url: /
-slug:
+slug: /
 title: Landing Page
 description:
 author:
