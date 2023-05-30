@@ -27,15 +27,15 @@ module.exports = {
             icon: 'wysiwyg',
             _enabled_editors: ['visual', 'content']
         },
-        collection_groups: [
-            {
-                heading: 'Pages',
-                collections: [
-                    'webpages'
-                ]
-            },
-        ]
     },
+    collection_groups: [
+        {
+            heading: 'Pages',
+            collections: [
+                'webpages'
+            ]
+        },
+    ],
     data_config: {
 
     }
