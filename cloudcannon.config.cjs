@@ -8,6 +8,9 @@ module.exports = {
             }
         }
     },
+    _inputs: { 
+
+    },
     paths: {
         collections: 'content',
         data: 'data',
@@ -25,7 +28,10 @@ module.exports = {
             url: '/[slug]',
             name: 'Pages',
             icon: 'wysiwyg',
-            _enabled_editors: ['visual', 'content']
+            _enabled_editors: ['visual', 'content'],
+            create: {
+                path: "[relative_base_path]/{title|slugify}.md"
+            }
         },
     },
     collection_groups: [
