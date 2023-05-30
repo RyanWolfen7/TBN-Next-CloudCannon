@@ -27,8 +27,17 @@ module.exports = {
             parser: 'frontmatter',
             output: true,
             url: '/[slug]',
-            name: 'Pages',
+            name: '[slug]',
             icon: 'wysiwyg',
+            schemas: {
+                default: {
+                    path: 'schemas/pages/default.md'
+                },
+                landing: {
+                    name: 'Landing Page',
+                    path: 'schemas/pages/landing.md'
+                }
+            },
             _enabled_editors: ['visual', 'content'],
         },
     },
