@@ -46,7 +46,7 @@ module.exports = {
         {
             heading: "Data",
             collections: [
-                data
+                'data'
             ]
         },
         {
