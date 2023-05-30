@@ -12,6 +12,9 @@ module.exports = {
         title: {
             comment: 'The title of your page.'
         },
+        url: {
+
+        },
         description: {
             comment: 'description of the page'
         },
@@ -36,6 +39,9 @@ module.exports = {
             url: '/[slug]',
             name: 'Pages',
             icon: 'wysiwyg',
+            create: {
+                path: "[relative_base_path]/{title|slugify}.md"
+            },
             _enabled_editors: ['visual', 'content', 'data'],
             add_options: [
                 {
