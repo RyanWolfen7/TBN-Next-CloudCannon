@@ -21,7 +21,11 @@ module.exports = {
         },
         pages: {
             path: './content/pages',
-            output: true
+            output: true,
+            url: '/[slug]',
+            name: 'Pages',
+            icon: 'wysiwyg',
+            _enabled_editors: ['visual', 'content']
         }
     },
     data_config: {
