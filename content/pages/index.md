@@ -1,7 +1,9 @@
 ---
-title: Landing Page
-slug: /
+_schema: default
 url: /
+slug:
+title: Landing Page
+description:
 author:
 image:
 ---
