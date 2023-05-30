@@ -44,7 +44,9 @@ module.exports = {
             },
             _enabled_editors: ['visual', 'content', 'data'],
             schemas: {
-                default: 'schemas/pages/default.md'
+                default: {
+                    path: 'schemas/pages/default.md'
+                }
             },
             add_options: [
                 {
