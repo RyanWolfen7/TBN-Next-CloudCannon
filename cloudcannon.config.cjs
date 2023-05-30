@@ -8,7 +8,7 @@ module.exports = {
             }
         }
     },
-    _inputs: { 
+    _inputs: {
         title: {
             comment: 'The title of your page.'
         },
@@ -55,6 +55,41 @@ module.exports = {
                 }
             ]
         },
+        guests: {
+            path: './content/guests',
+            output: true,
+            url: '/our-guests/[slug]',
+            name: "Guests",
+            icon: 'person',
+            disable_add_folder: true,
+            create: {
+                path: "[relative_base_path]/{title|slugify}.md"
+            },
+            _enabled_editors: ['visual', 'content', 'data'],
+            schemas: {
+                default: {
+                    path: 'schemas/guests/default.md'
+                }
+            },
+            sort: {
+                key: 'name'
+            },
+            sort_options: [
+                {
+                    key: 'name'
+                },
+                {
+                    key: 'name',
+                    order: 'desc'
+                }
+            ],
+            add_options: [
+                {
+                    name: "Add Guest",
+                    schema: "default"
+                }
+            ]
+        }
     },
     collection_groups: [
         {
@@ -66,10 +101,11 @@ module.exports = {
         {
             heading: 'Pages',
             collections: [
-                'webpages'
+                'webpages',
+                'guests'
             ]
         },
-        
+
     ],
     data_config: {
 
