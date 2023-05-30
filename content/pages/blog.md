@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: blog
+title: Blog
 description:
 author:
 image:
