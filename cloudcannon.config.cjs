@@ -43,12 +43,13 @@ module.exports = {
                 path: "[relative_base_path]/{title|slugify}.md"
             },
             _enabled_editors: ['visual', 'content', 'data'],
+            schemas: {
+                default: 'schemas/pages/default.md'
+            },
             add_options: [
                 {
                     name: "Add Page",
-                    schema: {
-                        path: 'schemas/pages/default.md'
-                    }
+                    schema: "default"
                 }
             ]
         },
