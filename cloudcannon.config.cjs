@@ -24,20 +24,10 @@ module.exports = {
         },
         webpages: {
             path: './content/pages',
-            parser: 'frontmatter',
             output: true,
             url: '/[slug]',
-            name: '[slug]',
+            name: 'Pages',
             icon: 'wysiwyg',
-            schemas: {
-                default: {
-                    path: 'schemas/pages/default.md'
-                },
-                landing: {
-                    name: 'Landing Page',
-                    path: 'schemas/pages/landing.md'
-                }
-            },
             _enabled_editors: ['visual', 'content'],
         },
     },
