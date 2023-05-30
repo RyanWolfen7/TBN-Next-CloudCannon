@@ -1,7 +1,7 @@
 ---
 _schema: default
 url: /
-slug: /
+slug: /watch
 title: Landing Page
 description:
 author:
