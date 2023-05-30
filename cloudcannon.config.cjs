@@ -37,7 +37,7 @@ module.exports = {
             path: './content/pages',
             output: true,
             url: '/[slug]',
-            name: 'Pages',
+            name: 'Static Pages',
             icon: 'wysiwyg',
             create: {
                 path: "[relative_base_path]/{title|slugify}.md"
@@ -55,6 +55,9 @@ module.exports = {
                 }
             ]
         },
+        guests: {
+
+        }
     },
     collection_groups: [
         {
