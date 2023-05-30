@@ -9,7 +9,15 @@ module.exports = {
         }
     },
     _inputs: { 
-
+        title: {
+            comment: 'The title of your page.'
+        },
+        description: {
+            comment: 'description of the page'
+        },
+        _select_data: {
+            categories: ['static', 'blog', 'video']
+        },
     },
     paths: {
         collections: 'content',
@@ -28,12 +36,21 @@ module.exports = {
             url: '/[slug]',
             name: 'Pages',
             icon: 'wysiwyg',
-            _enabled_editors: ['visual', 'content'],
+            _enabled_editors: ['visual', 'content', 'data'],
+            add_options: [
+                {
+                    name: "Add Page",
+                    editor: "visual",
+                    schema: {
+                        path: 'schemas/pages/default.md'
+                    }
+                }
+            ]
         },
     },
     collection_groups: [
         {
-            heading: "Data",
+            heading: "System",
             collections: [
                 'data'
             ]

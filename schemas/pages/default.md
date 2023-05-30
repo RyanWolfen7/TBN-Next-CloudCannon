@@ -1,6 +1,4 @@
 ---
-url:
-slug:
 title:
 description:
 author:
