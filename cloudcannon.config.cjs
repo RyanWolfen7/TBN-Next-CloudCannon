@@ -19,14 +19,22 @@ module.exports = {
             path: 'data',
             output: true
         },
-        pages: {
+        webpages: {
             path: './content/pages',
             output: true,
             url: '/[slug]',
             name: 'Pages',
             icon: 'wysiwyg',
             _enabled_editors: ['visual', 'content']
-        }
+        },
+        collection_groups: [
+            {
+                heading: 'Pages',
+                collections: [
+                    'webpages'
+                ]
+            },
+        ]
     },
     data_config: {
 
