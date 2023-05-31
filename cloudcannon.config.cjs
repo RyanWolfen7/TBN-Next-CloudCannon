@@ -31,15 +31,7 @@ module.exports = {
     collections_config: {
         data: {
             path: 'data',
-            output: true,
-            name: 'System Data',
-            icon: 'data'
-        },
-        dataPages: {
-            path: 'data/pages',
-            output: true,
-            name: 'Page Data',
-            icon: 'data'
+            output: true
         },
         webpages: {
             path: './content/pages',
@@ -103,8 +95,7 @@ module.exports = {
         {
             heading: "System",
             collections: [
-                'data',
-                'dataPages'
+                'data'
             ]
         },
         {

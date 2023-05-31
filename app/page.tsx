@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import { pages } from '../lib/data'
+import { landingPage } from '../lib/data'
 import tornPaper from '../public/effects/tornPaperDown.svg'
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
-const { mainHeader, showTimes, subText } = pages.landing
+const { mainHeader, showTimes, subText } = landingPage
 
 export default function Home() {
   return (
