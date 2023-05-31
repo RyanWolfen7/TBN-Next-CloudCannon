@@ -35,7 +35,7 @@ module.exports = {
             name: 'System Data',
             icon: 'data'
         },
-        pagesData: {
+        dataPages: {
             path: 'data/pages',
             output: true,
             name: 'Page Data',
@@ -104,7 +104,7 @@ module.exports = {
             heading: "System",
             collections: [
                 'data',
-                'pagesData'
+                'dataPages'
             ]
         },
         {
