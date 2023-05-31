@@ -3,7 +3,6 @@ import { landingPage } from '../lib/data'
 import tornPaper from '../public/effects/tornPaperDown.svg'
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 import { useEffect, useState } from 'react'
-import { landingPage } from '@/lib/data';
 
 const { mainHeader, showTimes, subText } = landingPage
 // const populateLanding
