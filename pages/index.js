@@ -25,7 +25,7 @@ export default function Home({page, pageData}) {
                   </svg>
                 </button>
               </div>
-              <p className="editable text-lg text-white quote">{pageData.subText}</p>
+              <p className="editable text-lg text-white quote" data-cms-bind="#pageData.subText">{pageData.subText}</p>
             </div>
           </div>
         </div>
