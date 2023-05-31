@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import { landingPage } from '../lib/data'
 import tornPaper from '../public/effects/tornPaperDown.svg'
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
-export default function Home({ landingPage }: any) {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className='h-20'>
