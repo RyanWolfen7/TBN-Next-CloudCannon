@@ -1,25 +1,12 @@
-import type { InferGetStaticPropsType, GetStaticProps } from 'next';
+'use server'
 import Image from 'next/image'
+import { landingPage } from '../lib/data'
 import tornPaper from '../public/effects/tornPaperDown.svg'
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
-import { landingPage } from '@/lib/data';
 
-type Landing = {
-  mainHeader: string,
-  showTimes: string,
-  subText: string
-};
- 
-export const getStaticProps: GetStaticProps<{
-  landingPage: Landing;
-}> = async ({ params }) => {
+const { mainHeader, showTimes, subText } = landingPage
 
-  return { props: { landingPage } };
-};
-
-export default function Home({ landingPage }: InferGetStaticPropsType<typeof getStaticProps>)  {
-  const { mainHeader, showTimes, subText } = landingPage
-
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className='h-20'>
