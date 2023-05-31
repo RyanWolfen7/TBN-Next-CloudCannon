@@ -2,9 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import NavBar from '../components/navbar/index';
 import Head from 'next/head';
-import { NextSeo } from 'next-seo';
 import { site } from '../lib/data';
-import { getCollectionItem, getCollection } from '../lib/collections';
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +17,6 @@ export default async function RootLayout({
 }: {
 	children: React.ReactNode
 }) {
-	const page = await getCollectionItem('pages', 'index');
 
 	return (
 		<html lang="en">
