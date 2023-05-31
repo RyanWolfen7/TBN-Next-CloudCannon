@@ -31,7 +31,19 @@ module.exports = {
     collections_config: {
         data: {
             path: 'data',
-            output: true
+            output: true,
+            name: 'System Data',
+            icon: 'data'
+        },
+        pagesData: {
+            path: 'data/pages',
+            output: true,
+            name: 'Page Data',
+            icon: 'data',
+            create: {
+                path: "[relative_base_path]/{title|slugify}.md"
+            },
+            _enabled_editors: ['data'],
         },
         webpages: {
             path: './content/pages',
@@ -95,7 +107,8 @@ module.exports = {
         {
             heading: "System",
             collections: [
-                'data'
+                'data',
+                'pagesData'
             ]
         },
         {
