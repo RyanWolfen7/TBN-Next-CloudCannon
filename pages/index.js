@@ -16,8 +16,8 @@ export default function Home({page, pageData}) {
         <div className={`bg-fuchsia-300/50 absolute inset-0 flex items-center justify-center`}>
           <div className={`bg-slate-600/40 absolute inset-0 flex items-center justify-center`}>
             <div className="flex flex-col items-center justify-center h-screen">
-              <h1 className="editable text-9xl font-bold mb-8 text-outlined-white mt-8" data-cms-bind="landingPage"> {pageData.mainHeader} </h1>
-              <h2 className="editable text-4xl mb-16 tracking-wide text-white" data-cms-bind="landingPage.showTimes">{pageData.showTimes}</h2>
+              <h1 className="editable text-9xl font-bold mb-8 text-outlined-white mt-8" data-cms-bind="PageLanding"> {pageData.mainHeader} </h1>
+              <h2 className="editable text-4xl mb-16 tracking-wide text-white" data-cms-bind="PageLanding">{pageData.showTimes}</h2>
               <div className="w-16 h-16 border-white border-2 rounded-full flex items-center justify-center mb-6">
                 <button className="text-white text-2xl ml-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -25,7 +25,7 @@ export default function Home({page, pageData}) {
                   </svg>
                 </button>
               </div>
-              <p className="editable text-lg text-white quote" data-cms-bind="#landingPage.subText">{pageData.subText}</p>
+              <p className="editable text-lg text-white quote" data-cms-bind="PageLanding">{pageData.subText}</p>
             </div>
           </div>
         </div>
