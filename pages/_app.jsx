@@ -3,5 +3,9 @@ import { landingPage } from '@/lib/data';
 
 export default function App({ Component, pageProps }) {
 	const AppComponent = CloudCannonConnect(Component);
-	return <AppComponent {...pageProps} langingPage={landingPage} />
+	return <AppComponent {...pageProps} />
 }
+
+export const getStaticProps = async () => {
+	return { props: { landingPage } };
+};
