@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { landingPage } from '../lib/data'
-import { getCollectionItem, getCollection } from '../lib/collections';
+import { getCollectionItem } from '../lib/collections';
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
 export default function Home({page, pageData}) {
