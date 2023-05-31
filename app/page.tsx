@@ -18,7 +18,7 @@ export default function Home() {
         <div className={`bg-fuchsia-300/50 absolute inset-0 flex items-center justify-center`}>
           <div className={`bg-slate-600/40 absolute inset-0 flex items-center justify-center`}>
             <div className="flex flex-col items-center justify-center h-screen">
-              <h1 className="editable text-9xl font-bold mb-8 text-outlined-white mt-8" data-cms-bind={landingPage.mainHeader}> {mainHeader} </h1>
+              <h1 className="editable text-9xl font-bold mb-8 text-outlined-white mt-8" data-cms-bind="title"> {mainHeader} </h1>
               <h2 className="editable text-4xl mb-16 tracking-wide text-white" data-cms-bind={showTimes}>{showTimes}</h2>
               <div className="w-16 h-16 border-white border-2 rounded-full flex items-center justify-center mb-6">
                 <button className="text-white text-2xl ml-1.5">
