@@ -34,7 +34,7 @@ export default function Home() {
         <Image
           src={tornPaperUp}
           alt="Torn Paper"
-          className='bottom-4 mb-12 right-0 w-full h-50'
+          className='bottom-4 mb-11 right-0 w-full h-50'
         />
       </div>
     </main>
