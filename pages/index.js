@@ -5,6 +5,7 @@ import tornPaperUp from '../public/effects/tornPaperUp.svg'
 import { useState, useRef } from 'react';
 import VideoPlayerIframeModal from './../components/modals/videoPlayer';
 import SplashImage from './../components/SplashImage';
+import WYSIWYG from './../components/wysiwyg';
 
 export default function Home({ page, pageData }) {
   const { splashImage, contentHtml } = page
@@ -25,10 +26,7 @@ export default function Home({ page, pageData }) {
           />
         </div>
       </div>
-
-      <div>
-        <div className="post-content" dangerouslySetInnerHTML={{ __html: page.contentHtml }} />
-      </div>
+      <WYSIWYG contentHtml={contentHtml} />
     </main>
   )
 }
