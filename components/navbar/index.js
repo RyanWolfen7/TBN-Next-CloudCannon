@@ -43,7 +43,7 @@ const NavBar = ({
                     </div>
                     <div className="editable flex items-center gap-12">
                         {navigation.mainNav.links.map((link, index) => (
-                            <Link data-cms-bind={`#navigation.mainNav.links${index}`} href={link.url} key={`${link.name}-${index}`} className={`editable ${color.text} !important mx-4 hover:text-gray-200`}>
+                            <Link href={link.url} key={`${link.name}-${index}`} className={`editable ${color.text} !important mx-4 hover:text-gray-200`}>
                                 {link.name.toUpperCase()}
                             </Link>
                         ))}
