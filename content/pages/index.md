@@ -10,7 +10,7 @@ heroImage:
     timeSlot: 1:30PM ET | 10:30AM PT ON TBN
     subtext: play the trailer
     colors: 
-        [comment]: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
+        comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
         primaryMaskColor:
         secondaryMaskColor:
     video:
