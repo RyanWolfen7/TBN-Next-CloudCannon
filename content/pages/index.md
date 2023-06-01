@@ -17,4 +17,3 @@ splashImage:
         videoUrl: https://player.vimeo.com/video/411194729
         title:
 ---
-https://www.bettertogether.tv/sites/default/files/2020-02/bt-groupphoto2020-compressor.png
