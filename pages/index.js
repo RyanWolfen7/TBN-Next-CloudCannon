@@ -10,7 +10,7 @@ export default function Home({page, pageData}) {
     <main className="editable flex min-h-screen flex-col items-center justify-between">
       <div className='h-20'>
         <Image
-          src="https://www.bettertogether.tv/sites/default/files/2019-04/Video_0.png"
+          src={heroImage.imageUrl}
           alt="Your Image"
           fill
           className=" bg-no-repeat bg-cover bg-tornBottem"
