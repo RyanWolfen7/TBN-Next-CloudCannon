@@ -60,6 +60,10 @@ a {
     opacity: 1;
 }
 
+.container {
+    background-color: transparent;
+}
+
 .about-program {
     margin-top: 85px;
     text-align: center;

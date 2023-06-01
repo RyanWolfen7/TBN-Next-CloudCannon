@@ -7,7 +7,7 @@ import VideoPlayerIframeModal from './../components/modals/videoPlayer';
 import SplashImage from './../components/SplashImage';
 import WYSIWYG from './../components/wysiwyg';
 
-export default function Home({ page, pageData }) {
+export default function Home({ page, pageData, contentRef }) {
   const { splashImage, contentHtml } = page
   const [open, setOpen] = useState(false)
   console.log(page)
@@ -15,7 +15,7 @@ export default function Home({ page, pageData }) {
 
   return (
     <main>
-      <div className="flex min-h-screen flex-col items-center justify-between">
+      <div className="flex min-h-screen flex-col items-center justify-between" ref={contentRef}>
         <VideoPlayerIframeModal isOpen={open} openModal={openModal} videoUrl={splashImage.video.videoUrl} />
         <SplashImage {...splashImage} openModal={openModal}/>
         <div className="w-full z-40">
