@@ -14,6 +14,6 @@ heroImage:
         secondaryMaskColor:
     video:
         imageUrl:
-        videoUrl:
+        videoUrl: https://player.vimeo.com/video/411194729
         title:
 ---
