@@ -5,7 +5,7 @@ import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
 export default function Home({page, pageData}) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="editable flex min-h-screen flex-col items-center justify-between">
       <div className='h-20'>
         <Image
           src="https://www.bettertogether.tv/sites/default/files/2019-04/Video_0.png"
@@ -16,8 +16,8 @@ export default function Home({page, pageData}) {
         <div className={`bg-fuchsia-300/50 absolute inset-0 flex items-center justify-center`}>
           <div className={`bg-slate-600/40 absolute inset-0 flex items-center justify-center`}>
             <div className="flex flex-col items-center justify-center h-screen">
-              <h1 className="editable text-9xl font-bold mb-8 text-outlined-white mt-8"> {pageData.mainHeader} </h1>
-              <h2 className="editable text-4xl mb-16 tracking-wide text-white">{pageData.showTimes}</h2>
+              <h1 className="text-9xl font-bold mb-8 text-outlined-white mt-8"> {pageData.mainHeader} </h1>
+              <h2 className="text-4xl mb-16 tracking-wide text-white">{pageData.showTimes}</h2>
               <div className="w-16 h-16 border-white border-2 rounded-full flex items-center justify-center mb-6">
                 <button className="text-white text-2xl ml-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -25,7 +25,7 @@ export default function Home({page, pageData}) {
                   </svg>
                 </button>
               </div>
-              <p className="editable text-lg text-white quote">{pageData.subText}</p>
+              <p className="text-lg text-white quote">{pageData.subText}</p>
             </div>
           </div>
         </div>
