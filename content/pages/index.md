@@ -34,7 +34,7 @@ splashImage:
     <div class="image-wrapper">
         <div class="container">
             <div class="row">
-                <img src="https://www.bettertogether.tvhttps://www.bettertogether.tv/sites/default/files/2020-02/bt-groupphoto2020-compressor.png" alt="We are Better Together!"
+                <img src="https://www.bettertogether.tv/sites/default/files/2020-02/bt-groupphoto2020-compressor.png" alt="We are Better Together!"
                     loading="lazy" typeof="foaf:Image" />
             </div>
         </div>

@@ -1,15 +1,8 @@
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
 h2 {
     font-size: 2.1em;
     text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 h2 span {
@@ -27,12 +20,19 @@ a {
     text-align: center;
 }
 
-.about-program, .about-program:after {
+.about-program .description {
+    font-size: 1.3em;
+    margin: 1.5em 0;
+    font-weight: 300;
+}
+
+.about-program,
+.about-program:after {
     background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/about-bg.jpg) 50% 100%/150% no-repeat;
 }
 
 .about-program .image-wrapper {
-    margin-top: 60px;
+    margin-top: 6rem;
 }
 
 .about-program .image-wrapper img {
@@ -40,14 +40,18 @@ a {
     margin: auto;
 }
 
-.container, .search-page .search-form .form-wrapper, .search-page .search-form+h2 {
+.container,
+.search-page .search-form .form-wrapper,
+.search-page .search-form+h2 {
     margin: auto;
     width: 90%;
     max-width: 1200px;
     position: relative;
 }
 
-.container:after, .search-page .search-form .form-wrapper:after, .search-page .search-form+h2:after {
+.container:after,
+.search-page .search-form .form-wrapper:after,
+.search-page .search-form+h2:after {
     content: '';
     display: block;
     clear: both;
@@ -59,19 +63,12 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .about-program .row {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-}
-
-.about-program .description {
-    font-size: 1.6em;
-    margin: 1.5em 0;
 }
 
 .btn {
@@ -90,19 +87,26 @@ a {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-.btn.no-bg, .btn.primary, .button.no-bg, .button.primary, .hs-button.no-bg, .hs-button.primary {
-    color: #040707!important;
-    background: 0 0!important;
-    border-color: #040707!important;
+.btn.no-bg,
+.btn.primary,
+.button.no-bg,
+.button.primary,
+.hs-button.no-bg,
+.hs-button.primary {
+    color: #040707 !important;
+    background: 0 0 !important;
+    border-color: #040707 !important;
 }
 
-.btn, .button, .hs-button {
+.btn,
+.button,
+.hs-button {
     display: inline-block;
     text-align: center;
     color: #fff;
@@ -121,7 +125,31 @@ a {
     width: auto;
 }
 
-.btn, .btn.no-bg:after, .btn.primary:after, .button, .button.no-bg:after, .button.primary:after, .full-episodes-items .full-episode-item-wrapper .video-thumbnail.active:after, .gallery-paragraph .paragraph--type--gallery .slick--field-gallery-media .slick-arrow, .guests-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, .guests-wrapper footer a, .hs-button, .hs-button.no-bg:after, .hs-button.primary:after, .hs-form .actions:after, .link, .main-menu-container>*, .play-btn, .public-videos-wrapper .video-thumbnail:before, .recent-episodes-section .episode-image:after, .resources-page .resource-item .image-wrapper:before, .resources-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, .share-links-fixed a, .share-links-fixed:after, .views-infinite-scroll-content-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, a {
+.btn,
+.btn.no-bg:after,
+.btn.primary:after,
+.button,
+.button.no-bg:after,
+.button.primary:after,
+.full-episodes-items .full-episode-item-wrapper .video-thumbnail.active:after,
+.gallery-paragraph .paragraph--type--gallery .slick--field-gallery-media .slick-arrow,
+.guests-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+.guests-wrapper footer a,
+.hs-button,
+.hs-button.no-bg:after,
+.hs-button.primary:after,
+.hs-form .actions:after,
+.link,
+.main-menu-container>*,
+.play-btn,
+.public-videos-wrapper .video-thumbnail:before,
+.recent-episodes-section .episode-image:after,
+.resources-page .resource-item .image-wrapper:before,
+.resources-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+.share-links-fixed a,
+.share-links-fixed:after,
+.views-infinite-scroll-content-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+a {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
@@ -173,25 +201,69 @@ a {
     background-image: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Double%20Arrow%20Icon.svg);
 }
 
+.subscribe-section .images-wrapper img {
+    position: relative;
+    float: left;
+}
+
+.subscribe-section .images-wrapper img.img1, .subscribe-section .images-wrapper img:nth-child(1) {
+    width: 70%;
+    float: right;
+}
+
+.subscribe-section .images-wrapper img.img2, .subscribe-section .images-wrapper img:nth-child(2) {
+    width: 40%;
+    margin-top: -40%;
+    z-index: 1;
+}
+
+.subscribe-section .images-wrapper img.img3, .subscribe-section .images-wrapper img:nth-child(3) {
+    width: 64%;
+    margin: 10% 0 0 -20%;
+}
+
+@media screen and (min-width: 768px) {
+    .about-program {
+        margin-top: 50px;
+    }
+
+    .subscribe-section {
+        padding: 100px 0;
+    }
+
+    .subscribe-section .form-wrapper {
+        background: 0 0;
+        position: relative;
+    }
+
+    .about-program .image-wrapper .container, .about-program .image-wrapper .search-page .search-form .form-wrapper, .about-program .image-wrapper .search-page .search-form+h2, .search-page .about-program .image-wrapper .search-form+h2, .search-page .search-form .about-program .image-wrapper .form-wrapper {
+        width: 80%;
+    }
+}
+
 @media screen and (min-width: 992px) {
-    h2 {
-        font-size: 3.2em;
-        line-height: 1.4;
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .about-program {
-        margin-top: 120px;
         background-size: cover;
         background-position: 50% 50%;
     }
 
-    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
-        max-width: 540px;
-    }
-
-    .about-program .description {
-        font-size: 1.9em;
-        line-height: 1.9;
+    .subscribe-section:after {
+        content: '';
+        display: block;
+        top: 0;
+        bottom: -180px;
+        left: 0;
+        right: 0;
+        background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/floral.png) 105% 100%/358px no-repeat;
+        position: absolute;
+        z-index: 1;
     }
 
     .hs-form .actions input {
@@ -229,6 +301,10 @@ a {
         text-align: left;
     }
 
+    .subscribe-section h2 {
+        font-size: 1.7em;
+    }
+
     .subscribe-section .form-wrapper .hs_submit {
         text-align: right;
     }
@@ -239,30 +315,5 @@ a {
 
     .subscribe-section .form-wrapper input {
         width: 70%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .about-program {
-        margin-top: 50px;
-    }
-
-    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
-        max-width: 280px;
-    }
-
-    .subscribe-section {
-        padding: 100px 0;
-    }
-
-    .subscribe-section .form-wrapper {
-        background: 0 0;
-        position: relative;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .container, .search-page .search-form .form-wrapper, .search-page .search-form+h2 {
-        max-width: 540px;
     }
 }
