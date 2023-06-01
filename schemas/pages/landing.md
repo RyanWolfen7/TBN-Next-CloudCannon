@@ -10,12 +10,10 @@ heroImage:
     subtext: 
     colors: 
         primaryMaskColor:
-            type: string
-            comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
+            _comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
             value:
         secondaryMaskColor:
-            type: string
-            comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
+            _comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
             value:
     video:
         imageUrl:
