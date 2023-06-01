@@ -62,6 +62,9 @@ module.exports = {
             justify: "align-justify",
             image_size_attributes: true,
             snippet: true
+        },
+        imgage: {
+            image_size_attributes: true
         }
     },
     paths: {

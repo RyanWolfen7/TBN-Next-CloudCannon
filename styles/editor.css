@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+    font-size: 2.1em;
+    text-transform: uppercase;
+}
+
+h2 span {
+    color: #b084a6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+}
+
+.about-program {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.about-program, .about-program:after {
+    background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/about-bg.jpg) 50% 100%/150% no-repeat;
+}
+
+.about-program .image-wrapper {
+    margin-top: 60px;
+}
+
+.about-program .image-wrapper img {
+    display: block;
+    margin: auto;
+}
+
+.container, .search-page .search-form .form-wrapper, .search-page .search-form+h2 {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.container:after, .search-page .search-form .form-wrapper:after, .search-page .search-form+h2:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.about-program .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.about-program .description {
+    font-size: 1.6em;
+    margin: 1.5em 0;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.btn.no-bg, .btn.primary, .button.no-bg, .button.primary, .hs-button.no-bg, .hs-button.primary {
+    color: #040707!important;
+    background: 0 0!important;
+    border-color: #040707!important;
+}
+
+.btn, .button, .hs-button {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 2.6px;
+    padding: 15px 38px;
+    opacity: 1;
+    background: #b084a6;
+    border: 1px solid #b084a6;
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    width: auto;
+}
+
+.btn, .btn.no-bg:after, .btn.primary:after, .button, .button.no-bg:after, .button.primary:after, .full-episodes-items .full-episode-item-wrapper .video-thumbnail.active:after, .gallery-paragraph .paragraph--type--gallery .slick--field-gallery-media .slick-arrow, .guests-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, .guests-wrapper footer a, .hs-button, .hs-button.no-bg:after, .hs-button.primary:after, .hs-form .actions:after, .link, .main-menu-container>*, .play-btn, .public-videos-wrapper .video-thumbnail:before, .recent-episodes-section .episode-image:after, .resources-page .resource-item .image-wrapper:before, .resources-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, .share-links-fixed a, .share-links-fixed:after, .views-infinite-scroll-content-wrapper .full-episode-item-wrapper .video-thumbnail.active:after, a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.hs-form .actions {
+    position: relative;
+    margin-bottom: -2px;
+}
+
+.hs-form .actions:before {
+    content: '';
+    display: block;
+    height: .9em;
+    width: 1em;
+    background: url(/themes/custom/better_together/assets/images/icons/Double%20Arrow%20Icon_2.svg) 50% 50%/contain no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto .3em;
+    right: 38px;
+}
+
+.hs-form .actions input {
+    color: #040707;
+    background: 0 0;
+    border-color: #040707;
+    padding-right: calc(38px + 1em);
+}
+
+.subscribe-section {
+    margin-top: 25px;
+}
+
+.subscribe-section .form-wrapper {
+    background: #f7f1ed;
+    padding: 50px 0 35px;
+    text-align: center;
+}
+
+.subscribe-section .form-wrapper .hs_submit {
+    margin-top: 40px;
+}
+
+.subscribe-section .form-wrapper .actions {
+    display: inline-block;
+}
+
+.subscribe-section .form-wrapper .actions:before {
+    background-image: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Double%20Arrow%20Icon.svg);
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 3.2em;
+        line-height: 1.4;
+    }
+
+    .about-program {
+        margin-top: 120px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
+        max-width: 540px;
+    }
+
+    .about-program .description {
+        font-size: 1.9em;
+        line-height: 1.9;
+    }
+
+    .hs-form .actions input {
+        color: #040707;
+        background: 0 0;
+        border-color: #040707;
+        padding-right: calc(38px + 1em);
+    }
+
+    .subscribe-section {
+        margin: 0;
+        padding: 135px 0 70px;
+        position: relative;
+    }
+
+    .subscribe-section:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 242px;
+        left: 0;
+        right: 0;
+        height: 270px;
+        width: 100%;
+        background-color: #f7f1ed;
+        z-index: 0;
+    }
+
+    .subscribe-section .form-wrapper {
+        background: 0 0;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .subscribe-section .form-wrapper .hs_submit {
+        text-align: right;
+    }
+
+    .subscribe-section .form-wrapper .actions {
+        display: inline-block;
+    }
+
+    .subscribe-section .form-wrapper input {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-program {
+        margin-top: 50px;
+    }
+
+    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
+        max-width: 280px;
+    }
+
+    .subscribe-section {
+        padding: 100px 0;
+    }
+
+    .subscribe-section .form-wrapper {
+        background: 0 0;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container, .search-page .search-form .form-wrapper, .search-page .search-form+h2 {
+        max-width: 540px;
+    }
+}
