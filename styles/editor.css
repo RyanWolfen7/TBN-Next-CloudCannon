@@ -1,3 +1,48 @@
+html body .hs-form-field label, html body .hs-form-field span, html body p, html body td, html body th {
+    font-family: "Visby CF",sans-serif;
+    font-size: inherit;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+form input, form select, form textarea {
+    font-size: 17px;
+    font-family: "Visby CF",sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #b084a6;
+    width: 100%;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background: 0 0;
+    margin: 25px 0 0;
+}
+
+form input, form select {
+    border: none;
+    border-bottom: 2px solid #040707;
+    padding: 18px 0;
+}
+
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+}
+
 h2 {
     font-size: 2.1em;
     text-transform: uppercase;
@@ -46,6 +91,7 @@ a {
     margin: auto;
     width: 90%;
     max-width: 1200px;
+    z-index: 40;
     position: relative;
 }
 
@@ -134,6 +180,56 @@ a {
     width: auto;
 }
 
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+
 .btn,
 .btn.no-bg:after,
 .btn.primary:after,
@@ -188,6 +284,36 @@ a {
     padding-right: calc(38px + 1em);
 }
 
+.hs-form-a14373be-a33f-4114-8525-108b2119a389_1f79d801-c35c-4ac0-a758-597857c9e7a1 .hs-field-desc {
+    width: 100%;
+}
+
+.hs-form-a14373be-a33f-4114-8525-108b2119a389_1f79d801-c35c-4ac0-a758-597857c9e7a1 .hs-button {
+    white-space: pre-wrap;
+}
+
+.btn.no-bg:after, .btn.primary:after, .button.no-bg:after, .button.primary:after, .hs-button.no-bg:after, .hs-button.primary:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin: auto;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 85%;
+    background: #b084a6;
+}
+
+.bt-video-thumb-row p, .hbspt-form, .subscribe-section-inner .hbspt-form {
+    margin: 0;
+    width: 100%;
+}
+
+.bt-video-thumb-row p, .hbspt-form {
+    margin: 0 0 30px 30px;
+}
+
 .subscribe-section {
     margin-top: 25px;
 }
@@ -231,6 +357,7 @@ a {
     margin: 10% 0 0 -20%;
 }
 
+
 @media screen and (min-width: 768px) {
     .about-program {
         margin-top: 50px;
@@ -263,16 +390,8 @@ a {
         background-position: 50% 50%;
     }
 
-    .subscribe-section:after {
-        content: '';
-        display: block;
-        top: 0;
-        bottom: -180px;
-        left: 0;
-        right: 0;
-        background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/floral.png) 105% 100%/358px no-repeat;
-        position: absolute;
-        z-index: 1;
+    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
+        max-width: 540px;
     }
 
     .hs-form .actions input {
@@ -324,5 +443,24 @@ a {
 
     .subscribe-section .form-wrapper input {
         width: 70%;
+    }
+
+    .subscribe-section .form-wrapper form {
+        margin-top: 50px;
+    }
+
+    .subscribe-section .form-wrapper .hs-button {
+        width: 100%;
+    }
+    .subscribe-section:after {
+        content: '';
+        display: block;
+        top: 0;
+        bottom: -180px;
+        left: 0;
+        right: 0;
+        background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/floral.png) 105% 100%/358px no-repeat;
+        position: absolute;
+        z-index: 1;
     }
 }
