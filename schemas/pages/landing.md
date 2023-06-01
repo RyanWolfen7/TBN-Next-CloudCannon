@@ -11,7 +11,6 @@ heroImage:
     colors: 
         primaryMaskColor:
         secondaryMaskColor:
-        [comment]: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
     video:
         imageUrl:
         videoUrl:
