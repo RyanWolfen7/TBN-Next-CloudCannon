@@ -42,7 +42,7 @@ export default function Home({page, pageData}) {
               <h1 className="text-9xl font-bold mb-8 text-outlined-white mt-8 editable" data-cms-bind="heroImage.header"> {heroImage.header} </h1>
               <h2 className="text-4xl mb-16 tracking-wide text-white editable" data-cms-bind="heroImage.timeSlot">{heroImage.timeSlot}</h2>
               <div className="w-16 h-16 border-white border-2 rounded-full flex items-center justify-center mb-6" onClick={openModal}>
-                <button className="editable text-white text-2xl ml-1.5" data-cms-bind="heroImage.video">
+                <button className="text-white text-2xl ml-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path d="M3 22v-20l18 10-18 10z" />
                   </svg>
