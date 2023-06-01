@@ -3,7 +3,7 @@ title:
 description:
 author:
 image:
-heroImage:
+splashImage:
     imageUrl: 
     header: 
     timeSlot:

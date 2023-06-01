@@ -4,7 +4,7 @@ title:
 description:
 author:
 image:
-heroImage:
+splashImage:
     imageUrl: https://www.bettertogether.tv/sites/default/files/2019-04/Video_0.png
     header: Watch Daily
     timeSlot: 1:30PM ET | 10:30AM PT ON TBN
