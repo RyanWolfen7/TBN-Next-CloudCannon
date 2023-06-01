@@ -1,5 +1,4 @@
 ---
-_schema: landing
 title:
 description:
 author:

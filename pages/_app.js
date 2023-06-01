@@ -4,7 +4,6 @@ import { landingPage } from '@/lib/data';
 import NavBar from './../components/navbar/index';
 
 export default function App({ Component, pageProps }) {
-	console.log('_app', pageProps)
 	const AppComponent = CloudCannonConnect(Component);
 	return (
 		<>

@@ -4,6 +4,7 @@ import { getCollectionItem } from '../lib/collections';
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
 export default function Home({page, pageData}) {
+  console.log(page)
   return (
     <main className="editable flex min-h-screen flex-col items-center justify-between">
       <div className='h-20'>

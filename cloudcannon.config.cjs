@@ -46,12 +46,24 @@ module.exports = {
             schemas: {
                 default: {
                     path: 'schemas/pages/default.md'
+                },
+                landing: {
+                    path: 'schemas/pages/landing.md'
                 }
             },
             add_options: [
                 {
                     name: "Add Page",
-                    schema: "default"
+                    options: [
+                        {
+                            name: "Default",
+                            schema: "default",
+                        },
+                        {
+                            name: "Landing",
+                            schema: "landing",
+                        },
+                    ],
                 }
             ]
         },
