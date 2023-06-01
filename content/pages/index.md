@@ -1,9 +1,10 @@
 ---
 _schema: landing
-title:
-description:
-author:
-image:
+pageDetails:
+    title:
+    description:
+    author:
+    image:
 splashImage:
     imageUrl: https://www.bettertogether.tv/sites/default/files/2019-04/Video_0.png
     header: Watch Daily

@@ -1,8 +1,9 @@
 ---
-title:
-description:
-author:
-image:
+pageDetails:
+    title:
+    description:
+    author:
+    image:
 splashImage:
     imageUrl: 
     header: 
