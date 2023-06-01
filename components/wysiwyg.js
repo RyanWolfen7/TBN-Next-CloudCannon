@@ -5,7 +5,7 @@ const WYSIWYG = ({
 
     return (
         <div>
-            <div className="editable post-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            <div className="editable w-full z-40 post-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
     )
 }
