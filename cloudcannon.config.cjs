@@ -23,6 +23,47 @@ module.exports = {
             categories: ['static', 'blog', 'video']
         },
     },
+    _editables: {
+        text: {
+            italic: true
+        },
+        block: {
+            format: "p h3",
+            undo: true,
+            redo: true
+        },
+        content: {
+            blockquote: true,
+            bold: true,
+            format: "p h1 h2 h3 h4 h5 h6 pre address div",
+            italic: true,
+            strike: true,
+            subscript: true,
+            superscript: true,
+            underline: true,
+            link: true,
+            bulletedlist: true,
+            indent: true,
+            numberedlist: true,
+            outdent: true,
+            code: true,
+            embed: true,
+            horizontalrule: true,
+            image: true,
+            table: true,
+            undo: true,
+            redo: true,
+            removeformat: true,
+            copyformatting: true,
+            styles: "/styles/editor.css",
+            left: "align-left",
+            center: "align-center",
+            right: "align-right",
+            justify: "align-justify",
+            image_size_attributes: true,
+            snippet: true
+        }
+    },
     paths: {
         collections: 'content',
         data: 'data',
