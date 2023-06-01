@@ -16,7 +16,7 @@ export default function Home({ page, pageData }) {
     <main>
       <div className="flex min-h-screen flex-col items-center justify-between">
         <VideoPlayerIframeModal isOpen={open} openModal={openModal} videoUrl={splashImage.video.videoUrl} />
-        <SplashImage {...splashImage} />
+        <SplashImage {...splashImage} openModal={openModal}/>
         <div className="w-full z-40">
           <Image
             src={tornPaperUp}
