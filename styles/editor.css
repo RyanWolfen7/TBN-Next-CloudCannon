@@ -63,6 +63,15 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.search-page .search-form .subscribe-section>.form-wrapper>.row, .search-page .subscribe-section>.search-form+h2>.row, .subscribe-section>.container>.row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .about-program .row {
