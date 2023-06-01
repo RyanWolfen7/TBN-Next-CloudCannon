@@ -29,7 +29,7 @@ export default function Home({page, pageData}) {
           </div>
         </div>
       </div> }
-      <div className='editable h-20'  data-cms-bind="heroImage.imageUrl">
+      <div className='h-20'>
         <Image
           src={heroImage.imageUrl}
           alt="Your Image"
