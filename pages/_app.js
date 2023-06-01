@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/editor.css'
 import {CloudCannonConnect} from '@cloudcannon/react-connector'
 import { landingPage } from '@/lib/data';
 import NavBar from './../components/navbar/index';
