@@ -1,11 +1,10 @@
-import { onCloudCannonChanges, stopCloudCannonChanges } from '@cloudcannon/visual-editor-connector';
 
 const WYSIWYG = ({
     contentHtml
 }) => {
-    onCloudCannonChanges(() => {
-        alert('Works')
-    })
+    if (window.inEditorMode) {
+        alert('Inside CloudCannon!');
+    }
 
     return (
         <div>
