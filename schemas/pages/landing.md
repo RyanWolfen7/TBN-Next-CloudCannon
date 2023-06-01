@@ -9,12 +9,9 @@ heroImage:
     timeSlot:
     subtext: 
     colors: 
+        This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
         primaryMaskColor:
-            _comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
-            value:
         secondaryMaskColor:
-            _comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
-            value:
     video:
         imageUrl:
         videoUrl:
