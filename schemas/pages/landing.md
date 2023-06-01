@@ -4,16 +4,19 @@ description:
 author:
 image:
 heroImage:
-    imageUrl:
-    primaryMaskColor:
-        type: string
-        comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
-    secondaryMaskColor:
-        type: string
-        comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
-    header:
+    imageUrl: 
+    header: 
     timeSlot:
-    subtext:
+    subtext: 
+    colors: 
+        primaryMaskColor:
+            type: string
+            comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
+            value:
+        secondaryMaskColor:
+            type: string
+            comment: This must be a tailwindcss color see https://tailwindcss.com/docs/text-color
+            value:
     video:
         imageUrl:
         videoUrl:
