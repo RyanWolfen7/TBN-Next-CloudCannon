@@ -4,7 +4,8 @@ module.exports = {
             markdown: "markdown-it",
             "markdown-it": {
                 html: true,
-                linkify: true
+                linkify: true,
+                block: true
             }
         }
     },
