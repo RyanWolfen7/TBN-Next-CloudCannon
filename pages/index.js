@@ -4,6 +4,7 @@ import { getCollectionItem } from '../lib/collections';
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
 export default function Home({page, pageData}) {
+  const { heroImage } = page
   console.log(page)
   return (
     <main className="editable flex min-h-screen flex-col items-center justify-between">
