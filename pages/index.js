@@ -19,7 +19,7 @@ export default function Home({page, pageData}) {
           <div className={`bg-slate-600/40 absolute inset-0 flex items-center justify-center`}>
             <div className="flex flex-col items-center justify-center h-screen">
               <h1 className="text-9xl font-bold mb-8 text-outlined-white mt-8 editable" data-cms-bind="heroImage.header"> {heroImage.header} </h1>
-              <h2 className="text-4xl mb-16 tracking-wide text-white editable" data-cms-bind="heroImage.timeSlots">{heroImage.timeSlots}</h2>
+              <h2 className="text-4xl mb-16 tracking-wide text-white editable" data-cms-bind="heroImage.timeSlot">{heroImage.timeSlot}</h2>
               <div className="w-16 h-16 border-white border-2 rounded-full flex items-center justify-center mb-6">
                 <button className="text-white text-2xl ml-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
