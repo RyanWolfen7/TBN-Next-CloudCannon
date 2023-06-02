@@ -6,6 +6,8 @@
     "address": "",
     "postal_address": "",
     "logo_url": "https://www.bettertogether.tv/sites/default/files/better-together-final_BW.png",
+    "tbn_logo_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/TBN%20Logo.png",
+    "tbn_url": "https://www.tbn.org",
     "social_media": [
         {
             "name": "Facebook",

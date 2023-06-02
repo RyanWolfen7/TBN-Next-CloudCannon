@@ -7,10 +7,10 @@ const SocialMediaSection = ({
     const socialMediaList = company.social_media
 
     return (
-        <div class="social-links-section">
-            <div class="container">
-                <div class="wrapper row">
-                    <nav role="navigation" aria-labelledby="block-socialmenu-menu" id="block-socialmenu" data-block-plugin-id="system_menu_block:socialmenu" class="settings-tray-editable" data-drupal-settingstray="editable">
+        <div className="social-links-section">
+            <div className="container">
+                <div className="wrapper row">
+                    <nav role="navigation" id="block-socialmenu">
                         <h2 id="block-socialmenu-menu">{header}</h2>
                         <ul>
                             {socialMediaList?.map((socialMedia, index) => {
