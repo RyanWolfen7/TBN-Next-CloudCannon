@@ -16,7 +16,7 @@ const Footer = () => {
                     className='filter invert w-full h-auto z-50'
                 />
             </div>
-            <footer className="bg-black text-white">
+            <footer className="bg-black text-white pb-14">
                 <div className="container flex flex-wrap">
                     <div className="w-full md:w-4/12 px-4">
                         <Image
@@ -34,7 +34,7 @@ const Footer = () => {
                         <ul className="text-md">
                             {linkList?.map((link, index) => {
                                 const { name, url } = link
-                                return <li key={`footer-${name}-${index}`} className='mb-2'>{name}</li>
+                                return <li key={`footer-${name}-${index}`} className='mb-2'> <Link href={url}> {name} </Link> </li>
                             })}
                         </ul>
                     </div>
