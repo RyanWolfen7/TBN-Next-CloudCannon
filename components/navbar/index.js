@@ -9,17 +9,20 @@ const defaultColor = {
     text: 'text-black',
     image: '',
     bg: 'bg-black',
+    width: 'w-4'
 }
 
 const updatedColor = {
     text: 'text-white',
     image: 'filter invert',
     bg: 'bg-white',
+    width: 'w-4'
 }
 
 const NavBar = () => {
     const pathname = usePathname();
     const [color, setColor] = useState(defaultColor);
+    const [hamburger, setHamburger] = useState(false)
     const navbarRef = useDynamicColor({ setColor, defaultColor, updatedColor});
 
 
@@ -27,6 +30,12 @@ const NavBar = () => {
         const light = ['/contact', '/', '/keep-talking'];
         light.includes(pathname) ? setColor(updatedColor) : setColor(defaultColor)
     }, [pathname]);
+
+    const handleMouseHamburger = (event) => {
+        const bg = color.bg == 'bg-purple-400' ? 'bg-black' : 'bg-purple-400'
+        const width = event.type == 'mouseenter' ?  'w-6'  : 'w-4' 
+        setColor({ ...color, ...{ bg, width } })
+    }
 
     return (
         <div ref={navbarRef} className="sticky top-0 z-50">
@@ -42,16 +51,14 @@ const NavBar = () => {
                         />
                     </Link>
                     {navigation.mainNav.links.map((link, index) => (
-                        <Link href={link.url} key={`${link.name}-${index}`} className={`${color.text} !important hidden sm:block mx-4 hover:text-gray-200`}>
+                        <Link href={link.url} key={`${link.name}-${index}`} className={`${color.text} !important hidden sm:block mx-4 hover:text-purple-400`}>
                             {link.name.toUpperCase()}
                         </Link>
                     ))}
-                    <button className={`${color.text} ml-4 p-1 hover:text-gray-200`}>
-                        <div className="space-y-2">
-                            <span className={`block w-4 h-0.5 ${color.bg} !important`}></span>
-                            <span className={`block w-5 h-0.5 ${color.bg}  !important`}></span>
+                    <button className={`${color.text} ml-4 hover:text-black space-y-2 transition-all duration-300 ease-in-out`} onMouseEnter={handleMouseHamburger} onMouseLeave={handleMouseHamburger}>
+                            <span className={`block ${color.width} h-0.5 ${color.bg} !important`}></span>
                             <span className={`block w-6 h-0.5 ${color.bg}  !important`}></span>
-                        </div>
+                            <span className={`block w-6 h-0.5 ${color.bg}  !important`}></span>
                     </button>
                 </div>
             </div>
