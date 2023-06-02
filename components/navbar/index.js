@@ -25,13 +25,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const light = ['/contact', '/', '/keep-talking'];
-        if (light.includes(pathname)) {
-            setColor({
-                text: 'text-white',
-                image: 'filter invert',
-                bg: 'bg-white',
-            });
-        }
+        light.includes(pathname) ? setColor(updatedColor) : setColor(defaultColor)
     }, [pathname]);
 
     return (
