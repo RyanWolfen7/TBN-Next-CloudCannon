@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { navigation, company } from '../../lib/data';
 import Link from 'next/link';
+import SideNav from './SideNav';
 
 const defaultColor = {
     text: 'text-black',
@@ -22,7 +23,7 @@ const updatedColor = {
 const NavBar = () => {
     const pathname = usePathname();
     const [color, setColor] = useState(defaultColor);
-    const [hamburger, setHamburger] = useState(false)
+    const [sideNav, setSideNav] = useState(false)
     const navbarRef = useDynamicColor({ setColor, defaultColor, updatedColor});
 
 
@@ -37,8 +38,11 @@ const NavBar = () => {
         setColor({ ...color, ...{ bg, width } })
     }
 
+    const handleSideNav = () => setSideNav(!sideNav)
+
     return (
         <div ref={navbarRef} className="sticky top-0 z-50">
+            <SideNav isOpen={sideNav} onHandle={handleSideNav}/>
             <div className="flex justify-center">
                 <div className="flex items-center justify-between py-2 px-6 w-10/12">
                     <Link href="/" className={`mr-md-4 ${color.text}`}>
@@ -55,11 +59,12 @@ const NavBar = () => {
                             {link.name.toUpperCase()}
                         </Link>
                     ))}
-                    <button className={`${color.text} ml-4 hover:text-black space-y-2 transition-all duration-300 ease-in-out`} onMouseEnter={handleMouseHamburger} onMouseLeave={handleMouseHamburger}>
+                    <button className={`${color.text} ml-4 hover:text-black space-y-2 transition-all duration-300 ease-in-out`} onMouseEnter={handleMouseHamburger} onMouseLeave={handleMouseHamburger} onClick={handleSideNav}>
                             <span className={`block ${color.width} h-0.5 ${color.bg} !important`}></span>
                             <span className={`block w-6 h-0.5 ${color.bg}  !important`}></span>
                             <span className={`block w-6 h-0.5 ${color.bg}  !important`}></span>
                     </button>
+
                 </div>
             </div>
         </div>
