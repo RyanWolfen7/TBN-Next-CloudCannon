@@ -467,4 +467,9 @@ a {
         position: absolute;
         z-index: 1;
     }
+
+    .about-program .description {
+        font-size: 1.65em;
+        line-height: 1.9;
+    }
 }

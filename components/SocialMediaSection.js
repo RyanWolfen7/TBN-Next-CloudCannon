@@ -7,9 +7,9 @@ const SocialMediaSection = ({
     const socialMediaList = company.social_media
 
     return (
-        <div className="social-links-section">
-            <div className="container">
-                <div className="wrapper row">
+        <div class="social-links-section">
+            <div class="container">
+                <div class="wrapper row">
                     <nav role="navigation" id="block-socialmenu">
                         <h2 id="block-socialmenu-menu">{header}</h2>
                         <ul>
