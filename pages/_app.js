@@ -4,6 +4,7 @@ import '../styles/socialMediaSection.css'
 import { CloudCannonConnect } from '@cloudcannon/react-connector'
 import NavBar from './../components/navbar/index';
 import SocialMediaSection from './../components/SocialMediaSection';
+import Footer from './../components/Footer';
 
 export default function App({ Component, pageProps }) {
 	const AppComponent = CloudCannonConnect(Component);
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
 			<NavBar />
 			<AppComponent {...pageProps} />
 			<SocialMediaSection />
+			<Footer />
 		</>
 	)
 }
