@@ -16,7 +16,7 @@ const SplashImage = ({
                 fill
                 className="bg-no-repeat bg-cover bg-tornBottem"
             />
-            <div className={`bg-gradient-to-b from-splash/70 to-splashTransition/70 absolute inset-0 flex items-center justify-center`}>
+            <div className={`bg-splash/0 bg-gradient-to-b from-splash/70 to-splashTransition/70 absolute inset-0 flex items-center justify-center`}>
                     <div className="flex flex-col items-center justify-center h-screen">
                         <h1 className="text-6xl sm:text-9xl font-bold mb-8 text-outlined-white mt-8 editable text-center" data-cms-bind="splashImage.header"> {header} </h1>
                         <h2 className="text-xl sm:text-4xl mb-16 tracking-wide text-white editable" data-cms-bind="splashImage.timeSlot">{timeSlot}</h2>
