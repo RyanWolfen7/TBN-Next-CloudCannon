@@ -1,0 +1,67 @@
+.social-links-section {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/social_bg.jpg) 50% 100%/120% no-repeat;
+    text-align: center;
+}
+
+.social-links-section ul {
+    text-align: right;
+    margin-top: 65px;
+}
+
+.social-links-section ul li {
+    display: inline-block;
+    margin: 2px;
+    color: rgba(0,0,0,0);
+    text-indent: -9999px;
+}
+
+.social-links-section ul a {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#block-socialmenu-menu {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .social-links-section {
+        padding: 19% 0 5%;
+        margin-top: 0;
+    }
+
+    .social-links-section .wrapper {
+        float: right;
+        width: 65%;
+    }
+
+    .social-links-section ul {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .social-links-section {
+        padding: 17% 0 7%;
+        background-size: 100%;
+    }
+
+    .social-links-section .wrapper {
+        width: 60%;
+    }
+
+    
+    .social-links-section ul {
+        text-align: center;
+    }
+
+    .social-links-section ul li {
+        margin: 0 7px;
+    }
+}

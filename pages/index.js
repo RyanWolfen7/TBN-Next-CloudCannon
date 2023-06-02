@@ -10,7 +10,6 @@ import WYSIWYG from './../components/wysiwyg';
 export default function Home({ page, pageData, contentRef }) {
   const { splashImage, contentHtml } = page
   const [open, setOpen] = useState(false)
-  console.log(page)
   const openModal = () => setOpen(!open)
 
   return (
