@@ -1,12 +1,13 @@
 'use client'
 import Link from 'next/link';
-import { footer, company, } from '../lib/data';
+import { footer, company, navigation} from '../lib/data';
 import Image from 'next/image';
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 
 const Footer = () => {
     const { logo_url: logo, tbn_logo_url: tbnLogo, tbn_url: tbnUrl } = company
-    const { legal: legalList, link_list: linkList, button_text: btnText, header } = footer.footer
+    const { legal: legalList,  button_text: btnText, header } = footer.footer
+    const links = navigation.links.sort((a, b) => a.footer_order - b.footer_order)
     return (
         <>
             <div className="w-full max-h-1  flex justify-end items-end z-40">
@@ -32,7 +33,8 @@ const Footer = () => {
                     </div>
                     <div className="w-full md:w-3/12 px-4 mt-6 text-center">
                         <ul className="text-md">
-                            {linkList?.map((link, index) => {
+                            {links?.map((link, index) => {
+                                if (link.footer_order <= 0) return null
                                 const { name, url } = link
                                 return <li key={`footer-${name}-${index}`} className='mb-2'> <Link href={url}> {name} </Link> </li>
                             })}

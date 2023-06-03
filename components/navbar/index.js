@@ -24,7 +24,8 @@ const NavBar = () => {
     const pathname = usePathname();
     const [color, setColor] = useState(defaultColor);
     const [sideNav, setSideNav] = useState(false)
-    const navbarRef = useDynamicColor({ setColor, defaultColor, updatedColor});
+    const navbarRef = useDynamicColor({ setColor, defaultColor, updatedColor})
+    const links = navigation.links.sort((a,b) => a.main_nav_order - b.main_nav_order)
 
 
     useEffect(() => {
@@ -54,11 +55,14 @@ const NavBar = () => {
                             className={`lg: mr-4 h-10 ${color.image}`}
                         />
                     </Link>
-                    {navigation.mainNav.links.map((link, index) => (
-                        <Link href={link.url} key={`${link.name}-${index}`} className={`${color.text} !important hidden sm:block mx-4 hover:text-purple-400`}>
-                            {link.name.toUpperCase()}
-                        </Link>
-                    ))}
+                    {navigation.links.map((link, index) => {
+                        if(link.main_nav_order <= 0) return null
+                        return (
+                            <Link href={link.url} key={`${link.name}-${index}`} className={`${color.text} !important hidden sm:block mx-4 hover:text-purple-400`}>
+                                {link.name.toUpperCase()}
+                            </Link>
+                        )
+                    })}
                     <button className={`${color.text} ml-4 hover:text-black space-y-2 transition-all duration-300 ease-in-out`} onMouseEnter={handleMouseHamburger} onMouseLeave={handleMouseHamburger} onClick={handleSideNav}>
                             <span className={`block ${color.width} h-0.5 ${color.bg} !important`}></span>
                             <span className={`block w-6 h-0.5 ${color.bg}  !important`}></span>
