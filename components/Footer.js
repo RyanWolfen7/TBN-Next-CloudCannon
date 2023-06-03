@@ -14,7 +14,7 @@ const Footer = () => {
                 <Image
                     src={tornPaperUp}
                     alt="Torn Paper"
-                    className='filter invert w-full h-auto z-50'
+                    className='filter invert w-full h-auto z-40'
                 />
             </div>
             <footer className="bg-black text-white pb-14">

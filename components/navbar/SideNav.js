@@ -77,7 +77,7 @@ const SideDrawerNav = ({ isOpen, onHandle }) => {
                             </ul>
                         </nav>
                     </div>
-                    <SearchBar />
+                    <SearchBar onHandle={onHandle}/>
                 </div>
             </div>
         </div>

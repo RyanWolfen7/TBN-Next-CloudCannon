@@ -1,11 +1,19 @@
 import { useRouter } from "next/router";
 
-const SearchBar = () => {
+const SearchBar = ({onHandle}) => {
     const router = useRouter();
+
     const handleSearch = (e) => {
         e.preventDefault();
-        const searchQuery = e.target.elements.search.value;
+        onHandle()
+        const searchQuery = e.target.value;
         router.push(`/search?query=${searchQuery}`);
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
+            handleSearch(e);
+        }
     };
 
     return (
@@ -21,6 +29,7 @@ const SearchBar = () => {
                 name="search"
                 placeholder="Search"
                 className="p-2 mb-5 text-lg border-none text-white bg-transparent focus:outline-none"
+                onKeyDown={handleKeyPress}
             />
         </form>
     );
