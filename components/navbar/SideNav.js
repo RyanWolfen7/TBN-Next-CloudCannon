@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
 import { company, navigation } from '@/lib/data';
 import Link from 'next/link';
-import SearchBar from './../SearchBar';
+import SearchBar from '../inputs/SearchBar';
 
 const SideDrawerNav = ({ isOpen, onHandle }) => {
     const { social_media: socialMediaList, logo_url: logo } = company
@@ -68,7 +67,7 @@ const SideDrawerNav = ({ isOpen, onHandle }) => {
                                     const { name, url } = link
                                     return (
                                         <li key={`side-nav-${name}-${index}`} className='block text-lg font-bold leading-10 tracking-wider border-b border-white border-opacity-30 uppercase py-2'>
-                                            <Link href={url} className='font-normal text-md tracking-widest'>
+                                            <Link href={url} className='font-normal text-md tracking-widest' onClick={onHandle}>
                                                 {name}
                                             </Link>
                                         </li>

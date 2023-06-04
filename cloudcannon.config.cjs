@@ -94,7 +94,10 @@ module.exports = {
                 },
                 landing: {
                     path: 'schemas/pages/landing.md'
-                }
+                },
+                listIndex: {
+                    path: "schema/pages/listIndex.md"
+                } 
             },
             add_options: [
                 {
@@ -108,6 +111,10 @@ module.exports = {
                             name: "Landing",
                             schema: "landing",
                         },
+                        {
+                            name: "List Index",
+                            schema: 'listIndex'
+                        }
                     ],
                 }
             ]
