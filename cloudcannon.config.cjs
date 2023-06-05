@@ -87,16 +87,16 @@ module.exports = {
             _enabled_editors: ['visual', 'content', 'data'],
             schemas: {
                 default: {
-                    name: 'default',
+                    name: 'Page',
                     path: 'schemas/pages/default.md'
                 },
                 landing: {
-                    name: 'Landing',
+                    name: 'Landing Page',
                     path: 'schemas/pages/landing.md'
                 },
                 listIndex: {
                     path: "schema/pages/listIndex.md",
-                    name: 'ListIndex'
+                    name: 'List Index Page'
                 } 
             }
         },
