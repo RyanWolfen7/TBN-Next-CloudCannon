@@ -84,9 +84,6 @@ module.exports = {
             url: '/[slug]',
             name: 'Static Pages',
             icon: 'wysiwyg',
-            create: {
-                path: "[relative_base_path]/{title|slugify}.md"
-            },
             _enabled_editors: ['visual', 'content', 'data'],
             schemas: {
                 default: {
