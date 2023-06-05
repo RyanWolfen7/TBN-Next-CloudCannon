@@ -94,8 +94,8 @@ module.exports = {
                     name: 'Landing Page',
                     path: 'schemas/pages/landing.md'
                 },
-                listingPage: {
-                    path: "schema/pages/listingPage.md",
+                listing: {
+                    path: "schema/pages/listing.md",
                     name: 'Listing Page'
                 } 
             }

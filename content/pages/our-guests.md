@@ -1,5 +1,5 @@
 ---
-_schema: listingPage
+_schema: listing
 header:
 subText:
 listSource:
