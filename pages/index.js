@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { landingPage } from '../lib/data'
 import { getCollectionItem } from '../lib/collections';
 import tornPaperUp from '../public/effects/tornPaperUp.svg'
 import { useState, useRef } from 'react';
@@ -7,7 +6,7 @@ import VideoPlayerIframeModal from './../components/modals/videoPlayer';
 import SplashImage from './../components/SplashImage';
 import WYSIWYG from './../components/wysiwyg';
 
-export default function Home({ page, pageData, contentRef }) {
+export default function Home({ page, contentRef }) {
   const { splashImage, contentHtml } = page
   const [open, setOpen] = useState(false)
   const openModal = () => setOpen(!open)
@@ -36,7 +35,6 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       page: JSON.parse(JSON.stringify(page)),
-      pageData: landingPage
     }
   };
 }

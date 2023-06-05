@@ -12,7 +12,8 @@ module.exports = {
         secondary: '#8D6B94',
         main: '#B084A6',
         splash: '#8f5a9a',
-        splashTransition: '#b6a6c9'
+        splashTransition: '#b6a6c9',
+        tan: '#F7F1ED'
       },
       backgroundImage: {
         tornBottem: "url(/public/effects/tornPaperDown.svg)"

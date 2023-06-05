@@ -42,7 +42,7 @@ const NavBar = () => {
     const handleSideNav = () => setSideNav(!sideNav)
 
     return (
-        <div ref={navbarRef} className="sticky top-0 z-50">
+        <div ref={navbarRef} className="sticky top-0 z-50 max-h-20">
             <SideNav isOpen={sideNav} onHandle={handleSideNav}/>
             <div className="flex justify-center">
                 <div className="flex items-center justify-between py-2 px-6 w-10/12">
