@@ -4,17 +4,18 @@ subText:
 listSource:
 promotedListItems:
     - searchKey:
-    orderNumber: 
-    additionalOptions:
-        - key:
-        value:
+        key:
+        orderNumber: 
+        additionalOptions:
+            - key:
+                value:
 seo:
     headers:
         - name:
-        type:
+            type:
     meta:
         - name:
-        type:
+            type:
     scripts: 
         - html:
 ---
