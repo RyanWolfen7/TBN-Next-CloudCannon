@@ -41,7 +41,7 @@ const OurGuestsPage = ({ page, guests }) => {
             <AlphabetTabs list={guests} activeTab={activeTab} setActiveTab={setActiveTab}/>
             <div className="py-8 mx-24">
                 <h3 className="text-4xl font-bold text-main pb-8"> {activeTab} </h3>
-                <ul className="grid grid-cols-3 gap-6">
+                <ul className="grid md:grid-cols-3 gap-6">
                     {currentList.map((item, index) => {
                         const slugifiedName = createSlugFromNames(item.name)
                         return (
