@@ -2,10 +2,10 @@
     "links": [
         {
             "name": "blog",
-            "main_nav_order": 4,
+            "main_nav_order": 0,
             "footer_order": null,
             "side_nav_order": null,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/blog"
         },
         {
@@ -13,7 +13,7 @@
             "main_nav_order": 2,
             "side_nav_order": 1,
             "footer_order": 1,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/watch"
         },
         {
@@ -21,7 +21,7 @@
             "main_nav_order": null,
             "side_nav_order": 4,
             "footer_order": null,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/keep-talking"
         },
         {
@@ -29,7 +29,7 @@
             "main_nav_order": 3,
             "side_nav_order": 3,
             "footer_order": 2,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "https://www.tbn.org/bettertogether"
         },
         {
@@ -37,7 +37,7 @@
             "main_nav_order": null,
             "side_nav_order": 2,
             "footer_order": 3,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/our-guests"
         },
         {
@@ -45,7 +45,7 @@
             "main_nav_order": null,
             "side_nav_order": 5,
             "footer_order": 4,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/where-to-watch"
         },
         {
@@ -53,7 +53,7 @@
             "main_nav_order": 1,
             "side_nav_order": 6,
             "footer_order": 5,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0003&amp;utm_source=Btsite-footer&amp;utm_medium=web&amp;utm_content=footer"
         },
         {
@@ -61,7 +61,7 @@
             "main_nav_order": null,
             "side_nav_order": null,
             "footer_order": 6,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "https://www.tbn.org/privacy"
         },
         {
@@ -69,7 +69,7 @@
             "main_nav_order": null,
             "side_nav_order": null,
             "footer_order": 7,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "https://www.tbn.org/terms"
         },
         {
@@ -77,7 +77,7 @@
             "main_nav_order": null,
             "side_nav_order": 7,
             "footer_order": 8,
-            "promotional_url": "", 
+            "promotional_url": "",
             "url": "/contact"
         }
     ]
