@@ -3,19 +3,18 @@ header:
 subText:
 listSource:
 promotedListItems:
-    - searchKey:
-        key:
-        orderNumber: 
-        additionalOptions:
+        - key:
+          orderNumber: 
+          additionalOptions:
             - key:
-                value:
+              value:
 seo:
     headers:
         - name:
-            type:
+          type:
     meta:
         - name:
-            type:
+          type:
     scripts: 
         - html:
 ---
