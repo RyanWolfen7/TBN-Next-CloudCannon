@@ -1,0 +1,475 @@
+html body .hs-form-field label, html body .hs-form-field span, html body p, html body td, html body th {
+    font-family: "Visby CF",sans-serif;
+    font-size: inherit;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+form input, form select, form textarea {
+    font-size: 17px;
+    font-family: "Visby CF",sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #b084a6;
+    width: 100%;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background: 0 0;
+    margin: 25px 0 0;
+}
+
+form input, form select {
+    border: none;
+    border-bottom: 2px solid #040707;
+    padding: 18px 0;
+}
+
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+}
+
+h2 {
+    font-size: 2.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 span {
+    color: #b084a6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.about-program {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.about-program .description {
+    font-size: 1.3em;
+    margin: 1.5em 0;
+    font-weight: 300;
+}
+
+.about-program,
+.about-program:after {
+    background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/about-bg.jpg) 50% 100%/150% no-repeat;
+}
+
+.about-program .image-wrapper {
+    margin-top: 6rem;
+}
+
+.about-program .image-wrapper img {
+    display: block;
+    margin: auto;
+}
+
+.container,
+.search-page .search-form .form-wrapper,
+.search-page .search-form+h2 {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 40;
+    position: relative;
+}
+
+.container:after,
+.search-page .search-form .form-wrapper:after,
+.search-page .search-form+h2:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.search-page .search-form .subscribe-section>.form-wrapper>.row, .search-page .subscribe-section>.search-form+h2>.row, .subscribe-section>.container>.row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.about-program .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.btn.no-bg,
+.btn.primary,
+.button.no-bg,
+.button.primary,
+.hs-button.no-bg,
+.hs-button.primary {
+    color: #040707 !important;
+    background: 0 0 !important;
+    border-color: #040707 !important;
+}
+
+.btn,
+.button,
+.hs-button {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 2.6px;
+    padding: 15px 38px;
+    opacity: 1;
+    background: #b084a6;
+    border: 1px solid #b084a6;
+    border-radius: 1px;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    width: auto;
+}
+
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+}
+
+.btn,
+.btn.no-bg:after,
+.btn.primary:after,
+.button,
+.button.no-bg:after,
+.button.primary:after,
+.full-episodes-items .full-episode-item-wrapper .video-thumbnail.active:after,
+.gallery-paragraph .paragraph--type--gallery .slick--field-gallery-media .slick-arrow,
+.guests-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+.guests-wrapper footer a,
+.hs-button,
+.hs-button.no-bg:after,
+.hs-button.primary:after,
+.hs-form .actions:after,
+.link,
+.main-menu-container>*,
+.play-btn,
+.public-videos-wrapper .video-thumbnail:before,
+.recent-episodes-section .episode-image:after,
+.resources-page .resource-item .image-wrapper:before,
+.resources-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+.share-links-fixed a,
+.share-links-fixed:after,
+.views-infinite-scroll-content-wrapper .full-episode-item-wrapper .video-thumbnail.active:after,
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.hs-form .actions {
+    position: relative;
+    margin-bottom: -2px;
+}
+
+.hs-form .actions:before {
+    content: '';
+    display: block;
+    height: .9em;
+    width: 1em;
+    background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Double%20Arrow%20Icon_2.svg) 50% 50%/contain no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto .3em;
+    right: 38px;
+}
+
+.hs-form .actions input {
+    color: #040707;
+    background: 0 0;
+    border-color: #040707;
+    padding-right: calc(38px + 1em);
+}
+
+.hs-form-a14373be-a33f-4114-8525-108b2119a389_1f79d801-c35c-4ac0-a758-597857c9e7a1 .hs-field-desc {
+    width: 100%;
+}
+
+.hs-form-a14373be-a33f-4114-8525-108b2119a389_1f79d801-c35c-4ac0-a758-597857c9e7a1 .hs-button {
+    white-space: pre-wrap;
+}
+
+.btn.no-bg:after, .btn.primary:after, .button.no-bg:after, .button.primary:after, .hs-button.no-bg:after, .hs-button.primary:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin: auto;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 85%;
+    background: #b084a6;
+}
+
+.bt-video-thumb-row p, .hbspt-form, .subscribe-section-inner .hbspt-form {
+    margin: 0;
+    width: 100%;
+}
+
+.bt-video-thumb-row p, .hbspt-form {
+    margin: 0 0 30px 30px;
+}
+
+.subscribe-section {
+    margin-top: 25px;
+}
+
+.subscribe-section .form-wrapper {
+    background: #f7f1ed;
+    padding: 50px 0 35px;
+    text-align: center;
+}
+
+.subscribe-section .form-wrapper .hs_submit {
+    margin-top: 40px;
+}
+
+.subscribe-section .form-wrapper .actions {
+    display: inline-block;
+}
+
+.subscribe-section .form-wrapper .actions:before {
+    background-image: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Double%20Arrow%20Icon.svg);
+}
+
+.subscribe-section .images-wrapper img {
+    position: relative;
+    float: left;
+}
+
+.subscribe-section .images-wrapper img.img1, .subscribe-section .images-wrapper img:nth-child(1) {
+    width: 70%;
+    float: right;
+}
+
+.subscribe-section .images-wrapper img.img2, .subscribe-section .images-wrapper img:nth-child(2) {
+    width: 40%;
+    margin-top: -40%;
+    z-index: 1;
+}
+
+.subscribe-section .images-wrapper img.img3, .subscribe-section .images-wrapper img:nth-child(3) {
+    width: 64%;
+    margin: 10% 0 0 -20%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .about-program {
+        margin-top: 50px;
+    }
+
+    .subscribe-section {
+        padding: 100px 0;
+    }
+
+    .subscribe-section .form-wrapper {
+        background: 0 0;
+        position: relative;
+    }
+
+    .about-program .image-wrapper .container, .about-program .image-wrapper .search-page .search-form .form-wrapper, .about-program .image-wrapper .search-page .search-form+h2, .search-page .about-program .image-wrapper .search-form+h2, .search-page .search-form .about-program .image-wrapper .form-wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .about-program {
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .about-program>.container, .search-page .about-program>.search-form+h2, .search-page .search-form .about-program>.form-wrapper {
+        max-width: 540px;
+    }
+
+    .hs-form .actions input {
+        color: #040707;
+        background: 0 0;
+        border-color: #040707;
+        padding-right: calc(38px + 1em);
+    }
+
+    .subscribe-section {
+        margin: 0;
+        padding: 135px 0 70px;
+        position: relative;
+    }
+
+    .subscribe-section:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 242px;
+        left: 0;
+        right: 0;
+        height: 270px;
+        width: 100%;
+        background-color: #f7f1ed;
+        z-index: 0;
+    }
+
+    .subscribe-section .form-wrapper {
+        background: 0 0;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .subscribe-section h2 {
+        font-size: 1.7em;
+    }
+
+    .subscribe-section .form-wrapper .hs_submit {
+        text-align: right;
+    }
+
+    .subscribe-section .form-wrapper .actions {
+        display: inline-block;
+    }
+
+    .subscribe-section .form-wrapper input {
+        width: 70%;
+    }
+
+    .subscribe-section .form-wrapper form {
+        margin-top: 50px;
+    }
+
+    .subscribe-section .form-wrapper .hs-button {
+        width: 100%;
+    }
+    .subscribe-section:after {
+        content: '';
+        display: block;
+        top: 0;
+        bottom: -180px;
+        left: 0;
+        right: 0;
+        background: url(https://www.bettertogether.tv/themes/custom/better_together/assets/images/floral.png) 105% 100%/358px no-repeat;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .about-program .description {
+        font-size: 1.65em;
+        line-height: 1.9;
+    }
+}

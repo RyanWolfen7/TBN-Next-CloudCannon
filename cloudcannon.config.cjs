@@ -4,7 +4,8 @@ module.exports = {
             markdown: "markdown-it",
             "markdown-it": {
                 html: true,
-                linkify: true
+                linkify: true,
+                block: true
             }
         }
     },
@@ -21,6 +22,50 @@ module.exports = {
         _select_data: {
             categories: ['static', 'blog', 'video']
         },
+    },
+    _editables: {
+        text: {
+            italic: true
+        },
+        block: {
+            format: "p h3",
+            undo: true,
+            redo: true
+        },
+        content: {
+            blockquote: true,
+            bold: true,
+            format: "p h1 h2 h3 h4 h5 h6 pre address div",
+            italic: true,
+            strike: true,
+            subscript: true,
+            superscript: true,
+            underline: true,
+            link: true,
+            bulletedlist: true,
+            indent: true,
+            numberedlist: true,
+            outdent: true,
+            code: true,
+            embed: true,
+            horizontalrule: true,
+            image: true,
+            table: true,
+            undo: true,
+            redo: true,
+            removeformat: true,
+            copyformatting: true,
+            styles: "/styles/editor.css",
+            left: "align-left",
+            center: "align-center",
+            right: "align-right",
+            justify: "align-justify",
+            image_size_attributes: true,
+            snippet: true
+        },
+        imgage: {
+            image_size_attributes: true
+        }
     },
     paths: {
         collections: 'content',
@@ -39,21 +84,21 @@ module.exports = {
             url: '/[slug]',
             name: 'Static Pages',
             icon: 'wysiwyg',
-            create: {
-                path: "[relative_base_path]/{title|slugify}.md"
-            },
             _enabled_editors: ['visual', 'content', 'data'],
             schemas: {
                 default: {
+                    name: 'Page',
                     path: 'schemas/pages/default.md'
-                }
-            },
-            add_options: [
-                {
-                    name: "Add Page",
-                    schema: "default"
-                }
-            ]
+                },
+                landing: {
+                    name: 'Landing Page',
+                    path: 'schemas/pages/landing.md'
+                },
+                listing: {
+                    path: "schema/pages/listing.md",
+                    name: 'Listing Page'
+                } 
+            }
         },
         guests: {
             path: './content/guests',
@@ -105,7 +150,6 @@ module.exports = {
                 'guests'
             ]
         },
-
     ],
     data_config: {
 

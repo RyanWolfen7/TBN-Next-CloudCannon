@@ -1,3 +1,47 @@
-[
-    
-]
+{
+    "social_media_section": {
+        "header": "JOIN OUR SOCIAL MEDIA COMMUNITY"
+    },
+    "footer": {
+        "header": "Sign up for updates about Better Together on TBN",
+        "legal": [
+            "Copyright © 2023 TBN - Trinity Broadcasting Network. All Rights Reserved. Broadcasting Since 1973.",
+            "Trinity Broadcasting Network is the “D.B.A.” of Trinity Christian Center of Santa Ana Inc., a California religious non-profit corporation holding 501(C)(3) status with the Internal Revenue Service. Donations to Trinity Broadcasting Network are Tax Deductible to the extent permitted by law. EIN: 95-2844062"
+        ],
+        "button_text": "Let's go >>",
+        "link_list": [
+            {
+                "name": "Watch",
+                "url": "/watch"
+            },
+            {
+                "name": "Give",
+                "url": "https://www.tbn.org/bettertogether"
+            },
+            {
+                "name": "Meet Our Guests",
+                "url": "/our-guests"
+            },
+            {
+                "name": "Where to Watch",
+                "url": "/where-to-watch"
+            },
+            {
+                "name": "Shop",
+                "url": "https://shop.bettertogether.tv/?utm_campaign=BT22-SHOP-0003&amp;utm_source=Btsite-footer&amp;utm_medium=web&amp;utm_content=footer"
+            },
+            {
+                "name": "Privacy",
+                "url": "https://www.tbn.org/privacy"
+            },
+            {
+                "name": "Terms",
+                "url": "https://www.tbn.org/terms"
+            },
+            {
+                "name": "Contact",
+                "url": "/contact"
+            }
+        ]
+    }
+}

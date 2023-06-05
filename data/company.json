@@ -5,5 +5,64 @@
     "phone": "",
     "address": "",
     "postal_address": "",
-    "logo_url": "https://www.bettertogether.tv/sites/default/files/better-together-final_BW.png"
+    "logo_url": "https://www.bettertogether.tv/sites/default/files/better-together-final_BW.png",
+    "tbn_logo_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/TBN%20Logo.png",
+    "tbn_url": "https://www.tbn.org",
+    "social_media": [
+        {
+            "name": "Facebook",
+            "disk_image_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Facebook%20-%20Circle.svg",
+            "stick_images_urls": {
+                "black": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Facebook.svg",
+                "white": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Facebook_2.svg"
+            },
+            "ref_url": "https://www.facebook.com/BetterTogetherTV/",
+            "in_nav": true,
+            "in_social_media_section": true
+        },
+        {
+            "name": "Instagram",
+            "disk_image_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Instagram%20-%20Circle.svg",
+            "stick_images_urls": {
+                "black": "",
+                "white": ""
+            },
+            "ref_url": "https://www.instagram.com/bettertogethertv/",
+            "in_nav": false,
+            "in_social_media_section": true
+        },
+        {
+            "name": "TikTok",
+            "disk_image_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/tiktok-round.svg",
+            "stick_images_urls": {
+                "black": "",
+                "white": ""
+            },
+            "ref_url": "https://www.tiktok.com/@bettertogethertv",
+            "in_nav": false,
+            "in_social_media_section": true
+        },
+        {
+            "name": "Youtube",
+            "disk_image_url": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/YouTube%20-%20Circle.svg",
+            "stick_images_urls": {
+                "black": "",
+                "white": ""
+            },
+            "ref_url": "https://www.youtube.com/channel/UC6Ww0sGhpzK8HQHNSogQkwQ",
+            "in_nav": false,
+            "in_social_media_section": true
+        },
+        {
+            "name": "Twitter",
+            "disk_image_url": "",
+            "stick_images_urls": {
+                "black": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Twitter.svg",
+                "white": "https://www.bettertogether.tv/themes/custom/better_together/assets/images/icons/Twitter_2.svg"
+            },
+            "ref_url": "https://twitter.com/intent/tweet?text=Find%20out%20what%20happens%20when%20real%20friends%20get%20together%20for%20real%20conversations!%20Watch%20Better%20Together!&url=https://www.bettertogether.tv/home-page",
+            "in_nav": true,
+            "in_social_media_section": false
+        }
+    ]
 }

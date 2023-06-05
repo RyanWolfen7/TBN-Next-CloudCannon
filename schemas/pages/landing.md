@@ -1,0 +1,19 @@
+---
+pageDetails:
+    title:
+    description:
+    author:
+    image:
+splashImage:
+    imageUrl: 
+    header: 
+    timeSlot:
+    subtext: 
+    colors: 
+        primaryMaskColor:
+        secondaryMaskColor:
+    video:
+        imageUrl:
+        videoUrl:
+        title:
+---

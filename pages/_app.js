@@ -1,16 +1,19 @@
-import {CloudCannonConnect} from '@cloudcannon/react-connector'
-import { landingPage } from '@/lib/data';
-
-App.getInitialProps = async (ctx) => {
-	return { 
-		pageProps: {
-			landingPage
-		}
-	};
-};
+import '../styles/globals.css'
+import '../styles/editor.css'
+import '../styles/socialMediaSection.css'
+import { CloudCannonConnect } from '@cloudcannon/react-connector'
+import NavBar from './../components/navbar/index';
+import SocialMediaSection from './../components/SocialMediaSection';
+import Footer from './../components/Footer';
 
 export default function App({ Component, pageProps }) {
-	console.log('_app', pageProps)
 	const AppComponent = CloudCannonConnect(Component);
-	return <AppComponent {...pageProps}/>
+	return (
+		<>
+			<NavBar />
+			<AppComponent {...pageProps} />
+			<SocialMediaSection />
+			<Footer />
+		</>
+	)
 }
