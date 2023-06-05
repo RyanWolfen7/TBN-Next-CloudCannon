@@ -14,13 +14,14 @@ const OurGuestsPage = ({ page, guests }) => {
     useEffect(() => {
         if(guests.length && !activeTab) {
             const sortedGuests = guests.sort((a, b) => a.name.localeCompare(b.name))
-            setActiveTab(sortedGuests.name[0].toUpperCase)
+            setActiveTab(sortedGuests[0].name[0].toUpperCase())
         }
         if(activeTab) {
             const filteredGuests =  guests.filter(guest => guest.name[0].toUpperCase() == activeTab)
             setCurrentList(filteredGuests)
         }
     }, [guests, activeTab])
+
     return (
         <div className="">
             {header && <div> 
@@ -41,9 +42,9 @@ const OurGuestsPage = ({ page, guests }) => {
                         const slugifiedName = createSlugFromNames(item.name)
                         return (
                             <li key={`${item.name}-${index}`}>
-                                <Link href={`/${slugifiedName}`}>
+                                <Link href={`/our-guests/${[slugifiedName]}`}>
+                                    {item.name}
                                 </Link>
-                                {item.name}
                             </li>
                         )
                     })}

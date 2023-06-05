@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const AlphabetTabs = ({ list, activeTab, setActiveTab }) => {
-    const [color, setColor] = useState("text-black hover:text-main")
     const handleTabClick = (letter) => {
         setActiveTab(letter);
     };
@@ -12,10 +9,11 @@ const AlphabetTabs = ({ list, activeTab, setActiveTab }) => {
         <div className="flex justify-center">
             <div className="flex">
                 {alphabet.map((letter) => {
-                    const exists = list.find(item => item.searchKey[0] == letter)
+                    let color = "text-black hover:text-main"
+                    const exists = list.find(item => item.name[0] == letter)
                     const isActive = activeTab === letter
                     const isZ = letter == 'Z'
-                    if(isActive) setColor("text-main hover:text-black")
+                    if(isActive) color = "text-main hover:text-black "
                     return (<>
                         <button
                             key={letter}
@@ -28,14 +26,11 @@ const AlphabetTabs = ({ list, activeTab, setActiveTab }) => {
                                     {letter}
                                     {isActive && <span absolute bottom-0 left-0 w-full h-1 bg-main></span>}
                                 </span>
-                                {!isZ && <span> | </span>}
+                                {!isZ && <span className="text-black"> | </span>}
                             </div>
                         </button>
                     </>)
                 })}
-            </div>
-            <div>
-                
             </div>
         </div>
     );
