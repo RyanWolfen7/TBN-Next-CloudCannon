@@ -4,6 +4,6 @@ header:
 subText:
 listSource:
 promotedListItems:
-  - key: ryan-clark
+  - key: Ryan Clark
     orderNumber:
 ---
