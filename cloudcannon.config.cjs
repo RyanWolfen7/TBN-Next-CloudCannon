@@ -95,26 +95,7 @@ module.exports = {
                 listIndex: {
                     path: "schema/pages/listIndex.md"
                 } 
-            },
-            add_options: [
-                {
-                    name: "Add Page",
-                    options: [
-                        {
-                            name: "Default",
-                            schema: "default",
-                        },
-                        {
-                            name: "Landing",
-                            schema: "landing",
-                        },
-                        {
-                            name: "List Index",
-                            schema: 'listIndex'
-                        }
-                    ],
-                }
-            ]
+            }
         },
         guests: {
             path: './content/guests',
@@ -166,7 +147,6 @@ module.exports = {
                 'guests'
             ]
         },
-
     ],
     data_config: {
 
