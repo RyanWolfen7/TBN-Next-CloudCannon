@@ -1,4 +1,6 @@
+import createSlugFromNames from "@/lib/helpers/slugify";
 import Image from "next/image"
+import Link from "next/link";
 import { useState } from "react";
 
 const HighlightedGuests = ({ guests, promotedListItems }) => {
@@ -13,32 +15,35 @@ const HighlightedGuests = ({ guests, promotedListItems }) => {
         <div className="grid grid-cols-3 gap-6 mx-24 text-center my-24">
             {selectedGuests?.map((guest, index) => {
                 const { name, mainImage, transitionImage } = guest
+                const slugifiedName = createSlugFromNames(name)
                 return (
                     <div 
                         key={`${name}-highlighted-${index}`} 
                         onMouseEnter={() => handletransition(index, true)} 
                         onMouseLeave={() => handletransition(index, false)}
                     >
-                        <div className="mb-16">
-                            {transition[index] ?
-                                <Image
-                                    src={transitionImage}
-                                    alt="Second Image"
-                                    width={350}
-                                    height={350}
-                                />
-                                :
-                                <Image
-                                    src={mainImage}
-                                    alt="First Image"
-                                    width={350}
-                                    height={350}
-                                />
-                            }
-                        </div>
-                        <div className="text-4xl font-bold"> 
-                            {name}
-                        </div>
+                        <Link href={`/our-guests/${[slugifiedName]}`}>
+                            <div className="mb-16">
+                                {transition[index] ?
+                                    <Image
+                                        src={transitionImage}
+                                        alt="Second Image"
+                                        width={350}
+                                        height={350}
+                                    />
+                                    :
+                                    <Image
+                                        src={mainImage}
+                                        alt="First Image"
+                                        width={350}
+                                        height={350}
+                                    />
+                                }
+                            </div>
+                            <div className="text-4xl font-bold"> 
+                                {name}
+                            </div>
+                        </Link>
                     </div>
                 )
             })}
