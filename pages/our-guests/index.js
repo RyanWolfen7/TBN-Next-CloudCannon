@@ -24,24 +24,28 @@ const OurGuestsPage = ({ page, guests }) => {
 
     return (
         <div className="">
-            {header && <div> 
-                <h1> {header} </h1>
-                <p> {subText} </p>
-            </div>}
+            {header && 
+                <div className="flex-grow flex items-center justify-center mt-16">
+                    <div className="margin-x-auto max-w-xl text-center"> 
+                        <h1 className="text-6xl font-bold mb-6"> {header} </h1>
+                        <p className="text-xl"> {subText} </p>
+                    </div>
+                </div>
+            }
             <WYSIWYG contentHtml={contentHtml} />
             <HighlightedGuests
                 promotedListItems={promotedListItems}
                 guests={guests}
             />
-            <hr/>
+            <hr className="pb-4"/>
             <AlphabetTabs list={guests} activeTab={activeTab} setActiveTab={setActiveTab}/>
-            <div>
-                <h3> {activeTab} </h3>
-                <ul>
+            <div className="py-8 mx-24">
+                <h3 className="text-4xl font-bold text-main pb-8"> {activeTab} </h3>
+                <ul className="grid grid-cols-3 gap-6">
                     {currentList.map((item, index) => {
                         const slugifiedName = createSlugFromNames(item.name)
                         return (
-                            <li key={`${item.name}-${index}`}>
+                            <li key={`${item.name}-${index}`} className="text-xl hover:text-main">
                                 <Link href={`/our-guests/${[slugifiedName]}`}>
                                     {item.name}
                                 </Link>

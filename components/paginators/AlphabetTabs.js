@@ -17,12 +17,12 @@ const AlphabetTabs = ({ list, activeTab, setActiveTab }) => {
                     return (<>
                         <button
                             key={letter}
-                            className={`px-1 py-2 rounded-lg ${color} disabled:text-slate-300`}
+                            className={`py-2 rounded-lg ${color} text-xl disabled:text-slate-300`}
                             onClick={() => handleTabClick(letter)}
                             disabled={!exists}
                         >
                             <div className='relative'>
-                                <span className='relative inline-block'>
+                                <span className='relative inline-block pl-3 pr-2'>
                                     {letter}
                                     {isActive && <span absolute bottom-0 left-0 w-full h-1 bg-main></span>}
                                 </span>
