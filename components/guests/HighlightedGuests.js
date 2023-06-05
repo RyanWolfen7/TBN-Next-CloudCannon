@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HighlightedGuests = ({ guests, promotedListItems }) => {
     // const { searchKey, orderNumber } = promotedListItem
-    const selectedGuests = guests.filter(guest => promotedListItems.find(item => item.searchKey == guest.name) == guest.name)
+    const selectedGuests = guests.filter(guest => promotedListItems.find(item => item.key == guest.name) == guest.name)
     return (
         <div className="grid grid-cols-3 gap-4">
             {selectedGuests?.map((guest, index) => {

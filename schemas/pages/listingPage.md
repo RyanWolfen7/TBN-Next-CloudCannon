@@ -1,5 +1,4 @@
 ---
-_schema: listingPage
 header:
 subText:
 listSource:

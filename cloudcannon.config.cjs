@@ -94,9 +94,9 @@ module.exports = {
                     name: 'Landing Page',
                     path: 'schemas/pages/landing.md'
                 },
-                listIndex: {
-                    path: "schema/pages/listIndex.md",
-                    name: 'List Index Page'
+                listingPage: {
+                    path: "schema/pages/listingPage.md",
+                    name: 'Listing Page'
                 } 
             }
         },
